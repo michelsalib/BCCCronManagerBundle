@@ -12,7 +12,12 @@ It is a bundle that provides a web interface for managing cron table.
 - Translated in english and french
 
 ## Screenshots
-pending...
+### Cron list
+![](https://github.com/michelsalib/BCCCronManagerBundle/raw/master/Resources/screens/cron-list.png)
+### Cron form
+![](https://github.com/michelsalib/BCCCronManagerBundle/raw/master/Resources/screens/cron-form.png)
+### Cron output
+![](https://github.com/michelsalib/BCCCronManagerBundle/raw/master/Resources/screens/cron-file.png)
 
 ## Installation and configuration:
 
