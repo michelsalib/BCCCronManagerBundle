@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>cron.comment</source>
+        <target>Commentaire</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>cron.dayOfMonth</source>
+        <target>Jour du mois</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>cron.dayOfWeek</source>
+        <target>Jour de la semaine</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>cron.errorFile</source>
+        <target>Fichier d'erreur</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>cron.hour</source>
+        <target>Heure</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>cron.lastRun</source>
+        <target>Dernière exécution</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>cron.logFile</source>
+        <target>Fichier de sortie</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>cron.minute</source>
+        <target>Minute</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>cron.month</source>
+        <target>Mois</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>cron.preset.time</source>
+        <target>Presets de temps</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>cron.raw</source>
+        <target>Ligne</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>form.add</source>
+        <target>Ajouter</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>form.edit</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>form.help%user%%root%</source>
+        <target>Gardez à l'esprit que l'utilisateur est %user% et que sont répertoire est %root%.</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>form.preset.daily</source>
+        <target>Tous les jours</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>form.preset.hourly</source>
+        <target>Toutes les heures</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>form.preset.monthly</source>
+        <target>Tous les mois</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>form.preset.symfonyCommand</source>
+        <target>Commande Symfony</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>form.preset.symfonyLog</source>
+        <target>Répertoire de log de Symfony</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>form.preset.weekly</source>
+        <target>Toutes les semaines</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>form.preset.yearly</source>
+        <target>Tous les ans</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>form.remove</source>
+        <target>Effacer</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>list.details</source>
+        <target>Détails</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>list.errorFile</source>
+        <target>Fichier d'erreur</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>list.logFile</source>
+        <target>Fichier de sortie</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>list.unknown</source>
+        <target>Unconnu</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>modal.close</source>
+        <target>Fermer</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>title</source>
+        <target>BCC Cron Manager</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>title.add</source>
+        <target>Ajouter un cron</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>title.edit</source>
+        <target>Modifier un cron</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>title.list</source>
+        <target>Liste des crons</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>title.raw</source>
+        <target>Table des crons</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>list.status.success</source>
+        <target>Succès</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>list.status.unknown</source>
+        <target>Unconu</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>list.status.error</source>
+        <target>Erreur</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>cron.command</source>
+        <target>Commande</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

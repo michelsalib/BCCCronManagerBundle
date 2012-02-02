@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping http://symfony.com/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd">
+
+    <class name="BCC\CronManagerBundle\Manager\Cron">
+        <property name="minute">
+            <constraint name="NotBlank"/>
+            <constraint name="Regex">
+                <option name="pattern">/[0-9\*,\/]+/</option>
+            </constraint>
+        </property>
+        <property name="hour">
+            <constraint name="NotBlank"/>
+            <constraint name="Regex">
+                <option name="pattern">/[0-9\*,\/]+/</option>
+            </constraint>
+        </property>
+        <property name="dayOfMonth">
+            <constraint name="NotBlank"/>
+            <constraint name="Regex">
+                <option name="pattern">/[0-9\*,\/?LW]+/</option>
+            </constraint>
+        </property>
+        <property name="month">
+            <constraint name="NotBlank"/>
+            <constraint name="Regex">
+                <option name="pattern">/[A-Z0-9\*,\/]+/</option>
+            </constraint>
+        </property>
+        <property name="dayOfWeek">
+            <constraint name="NotBlank"/>
+            <constraint name="Regex">
+                <option name="pattern">/[A-Z0-6\*,\/?L#]+/</option>
+            </constraint>
+        </property>
+        <property name="command">
+            <constraint name="NotBlank" />
+        </property>
+        <property name="logFile">
+            <constraint name="Regex">
+                <option name="pattern">/\s+/</option>
+                <option name="match">0</option>
+            </constraint>
+        </property>
+        <property name="errorFile">
+            <constraint name="Regex">
+                <option name="pattern">/\s+/</option>
+                <option name="match">0</option>
+            </constraint>
+        </property>
+    </class>
+
+</constraint-mapping>
