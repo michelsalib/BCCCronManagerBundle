@@ -55,7 +55,7 @@ And make a `php bin/vendors install`.
     {
         return array(
             // ...
-            new BCC\ExtraToolsBundle\BCCCronManagerBundle(),
+            new BCC\CronManagerBundle\BCCCronManagerBundle(),
             // ...
         );
     }
