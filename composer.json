@@ -1,0 +1,22 @@
+{
+    "name": "bcc/cron-manager-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony BCCCronManagerBundle",
+    "keywords": ["cron management"],
+    "homepage": "http://github.com/michelsalib/BCCCronManagerBundle",
+    "authors": [
+        {
+            "name": "Michel Salib",
+            "email": "Michel.Salib@ece.fr",
+            "homepage": "http://michelsalib.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "BCC\\CronManagerBundle": "" }
+    },
+    "target-dir": "BCC/CronManagerBundle"
+}
