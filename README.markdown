@@ -9,7 +9,7 @@ It is a bundle that provides a web interface for managing cron table.
 - Can display log files
 - Support edit/add cron entry
 - Includes shortcuts to easily get common time expression, symfony command and symfony log directory
-- Translated in english and french
+- Translated in english, french and german
 
 ## Screenshots
 ### Cron list
