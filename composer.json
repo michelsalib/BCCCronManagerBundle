@@ -1,14 +1,14 @@
 {
     "name": "bcc/cron-manager-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony BCCCronManagerBundle",
+    "description": "A cron table manager bundle for Symfony2",
     "keywords": ["cron management"],
     "homepage": "http://github.com/michelsalib/BCCCronManagerBundle",
     "authors": [
         {
             "name": "Michel Salib",
-            "email": "Michel.Salib@ece.fr",
-            "homepage": "http://michelsalib.com"
+            "email": "michelsalib@hotmail.com",
+            "homepage": "http://www.michelsalib.com"
         }
     ],
     "require": {
