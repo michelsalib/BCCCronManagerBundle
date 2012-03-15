@@ -123,11 +123,11 @@ class Cron
         $logSize = null;
         $errorSize = null;
         if (isset($logFile) && \file_exists($logFile)) {
-            $lastRunTime = \fileatime($logFile);
+            $lastRunTime = \filemtime($logFile);
             $logSize = \filesize($logFile);
         }
         if (isset($errorFile) && \file_exists($errorFile)) {
-            $lastRunTime = \max($lastRunTime?:0, \fileatime($errorFile));
+            $lastRunTime = \max($lastRunTime?:0, \filemtime($errorFile));
             $errorSize = \filesize($errorFile);
         }
 
