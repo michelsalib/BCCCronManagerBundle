@@ -2,6 +2,8 @@
 
 It is a bundle that provides a web interface for managing cron table.
 
+[![Build Status](https://secure.travis-ci.org/michelsalib/BCCCronManagerBundle.png?branch=master)](http://travis-ci.org/michelsalib/BCCCronManagerBundle)
+
 ## Features:
 
 - Displays cron table with time expression, command, output file, error file and comment
