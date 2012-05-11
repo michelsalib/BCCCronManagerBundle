@@ -132,7 +132,7 @@ class DefaultController extends Controller
         $data['file'] =  ($type == 'log') ? $cron->getLogFile(): $cron->getErrorFile();
         $data['content'] = \file_get_contents($data['file']);
 
-        $serializer = new Serializer(array(), array(new JsonEncoder()));
+        $serializer = new Serializer(array(), array('json' => new JsonEncoder()));
 
         return new Response($serializer->serialize($data, 'json'));
     }
