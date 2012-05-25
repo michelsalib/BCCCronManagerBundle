@@ -46,7 +46,7 @@ class CronType extends AbstractType
      *
      * @return array The default options
      */
-    public function getDefaultOptions() {
+    public function getDefaultOptions(array $options) {
         return array(
             'data_class' => 'BCC\CronManagerBundle\Manager\Cron',
         );
