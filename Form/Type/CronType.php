@@ -2,12 +2,12 @@
 
 namespace BCC\CronManagerBundle\Form\Type;
 
-use \Symfony\Component\Form\FormBuilderInterface;
+use \Symfony\Component\Form\FormBuilder;
 use \Symfony\Component\Form\AbstractType;
 
 class CronType extends AbstractType
 {
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilder $builder, array $options)
     {
         $builder->add('minute');
         $builder->add('hour');
@@ -27,7 +27,7 @@ class CronType extends AbstractType
         ));
     }
 
-    public function getDefaultOptions()
+    public function getDefaultOptions(array $options)
     {
         return array(
             'data_class' => 'BCC\CronManagerBundle\Manager\Cron',
