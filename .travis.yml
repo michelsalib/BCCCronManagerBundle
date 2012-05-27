@@ -5,7 +5,8 @@ php:
   - 5.4
 
 before_script:
-  - php vendor/vendors.php
+  - curl -s http://getcomposer.org/installer | php
+  - COMPOSER_ROOT_VERSION=dev-master php composer.phar --dev install
 
 notifications:
   email:

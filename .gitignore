@@ -1,5 +1,5 @@
 phpunit.xml
-Tests/autoload.php
-
 vendor/*
-!vendor/vendors.php
+autoload.php
+composer.phar
+composer.lock
