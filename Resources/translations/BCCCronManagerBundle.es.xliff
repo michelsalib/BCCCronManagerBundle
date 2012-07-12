@@ -4,99 +4,99 @@
     <body>
       <trans-unit id="1">
         <source>Comment</source>
-        <target>Commentaire</target>
+        <target>Comentario</target>
       </trans-unit>
       <trans-unit id="2">
         <source>Day Of Month</source>
-        <target>Jour du mois</target>
+        <target>Día del Mes</target>
       </trans-unit>
       <trans-unit id="3">
         <source>Day Of Week</source>
-        <target>Jour de la semaine</target>
+        <target>Día de la Semana</target>
       </trans-unit>
       <trans-unit id="4">
         <source>Error File</source>
-        <target>Fichier d'erreur</target>
+        <target>Fichero de error</target>
       </trans-unit>
       <trans-unit id="5">
         <source>Hour</source>
-        <target>Heure</target>
+        <target>Hora</target>
       </trans-unit>
       <trans-unit id="6">
         <source>Last Run</source>
-        <target>Dernière exécution</target>
+        <target>Última ejecución</target>
       </trans-unit>
       <trans-unit id="7">
         <source>Log File</source>
-        <target>Fichier de sortie</target>
+        <target>Fichero de log</target>
       </trans-unit>
       <trans-unit id="8">
         <source>Minute</source>
-        <target>Minute</target>
+        <target>Minuto</target>
       </trans-unit>
       <trans-unit id="9">
         <source>Month</source>
-        <target>Mois</target>
+        <target>Mes</target>
       </trans-unit>
       <trans-unit id="10">
         <source>Time Presets</source>
-        <target>Presets de temps</target>
+        <target>Preajustes de tiempo</target>
       </trans-unit>
       <trans-unit id="11">
         <source>Raw cron</source>
-        <target>Ligne</target>
+        <target>Cron en raw</target>
       </trans-unit>
       <trans-unit id="12">
         <source>Add</source>
-        <target>Ajouter</target>
+        <target>Añadir</target>
       </trans-unit>
       <trans-unit id="13">
         <source>Edit</source>
-        <target>Modifier</target>
+        <target>Modificar</target>
       </trans-unit>
       <trans-unit id="14">
         <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
-        <target>Gardez à l'esprit que l'utilisateur est %user% et que sont répertoire est %root%.</target>
+        <target>Recuerda que el usuario es %user% y el directorio raiz es %root%.</target>
       </trans-unit>
       <trans-unit id="15">
         <source>Daily</source>
-        <target>Tous les jours</target>
+        <target>Diario</target>
       </trans-unit>
       <trans-unit id="16">
         <source>Hourly</source>
-        <target>Toutes les heures</target>
+        <target>Horario</target>
       </trans-unit>
       <trans-unit id="17">
         <source>Monthly</source>
-        <target>Tous les mois</target>
+        <target>Mensual</target>
       </trans-unit>
       <trans-unit id="18">
         <source>Symfony command</source>
-        <target>Commande Symfony</target>
+        <target>Comando Symfony</target>
       </trans-unit>
       <trans-unit id="19">
         <source>Symfony log directory</source>
-        <target>Répertoire de log de Symfony</target>
+        <target>Directorio de log de Symfony</target>
       </trans-unit>
       <trans-unit id="20">
         <source>Weekly</source>
-        <target>Toutes les semaines</target>
+        <target>Semanal</target>
       </trans-unit>
       <trans-unit id="21">
         <source>Yearly</source>
-        <target>Tous les ans</target>
+        <target>Anual</target>
       </trans-unit>
       <trans-unit id="22">
         <source>Remove</source>
-        <target>Effacer</target>
+        <target>Eliminar</target>
       </trans-unit>
       <trans-unit id="23">
         <source>Details</source>
-        <target>Détails</target>
+        <target>Detalles</target>
       </trans-unit>
       <trans-unit id="24">
         <source>Close</source>
-        <target>Fermer</target>
+        <target>Cerrar</target>
       </trans-unit>
       <trans-unit id="25">
         <source>BCC Cron Manager</source>
@@ -104,47 +104,47 @@
       </trans-unit>
       <trans-unit id="26">
         <source>Add a cron</source>
-        <target>Ajouter un cron</target>
+        <target>Añadir un cron</target>
       </trans-unit>
       <trans-unit id="27">
         <source>Edit a cron</source>
-        <target>Modifier un cron</target>
+        <target>Modificar un cron</target>
       </trans-unit>
       <trans-unit id="28">
         <source>Cron list</source>
-        <target>Liste des crons</target>
+        <target>Lista de crons</target>
       </trans-unit>
       <trans-unit id="29">
         <source>Cron table</source>
-        <target>Table des crons</target>
+        <target>Tabla de crons</target>
       </trans-unit>
       <trans-unit id="30">
         <source>Success</source>
-        <target>Succès</target>
+        <target>Éxito</target>
       </trans-unit>
       <trans-unit id="31">
         <source>Unknown</source>
-        <target>Inconnu</target>
+        <target>Desconocido</target>
       </trans-unit>
       <trans-unit id="32">
         <source>Error</source>
-        <target>Erreur</target>
+        <target>Error</target>
       </trans-unit>
       <trans-unit id="33">
         <source>Command</source>
-        <target>Commande</target>
+        <target>Comando</target>
       </trans-unit>
       <trans-unit id="34">
         <source>success</source>
-        <target>succès</target>
+        <target>éxito</target>
       </trans-unit>
       <trans-unit id="35">
         <source>unknown</source>
-        <target>unconnu</target>
+        <target>desconocido</target>
       </trans-unit>
       <trans-unit id="36">
         <source>error</source>
-        <target>erreur</target>
+        <target>error</target>
       </trans-unit>
     </body>
   </file>

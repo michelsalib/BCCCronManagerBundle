@@ -146,7 +146,7 @@ class DefaultController extends Controller
      */
     private function addFlash($type, $message)
     {
-        if ('' == $message) {
+        if ('' == $message || null === $message) {
             return;
         }
 
