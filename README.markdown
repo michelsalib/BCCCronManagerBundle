@@ -25,12 +25,23 @@ It is a bundle that provides a web interface for managing cron table.
 
 ### Get the bundle
 
+#### If you are using Symfony master
 Add to your `/deps` file :
 
 ```
 [BCCCronManagerBundle]
     git=http://github.com/michelsalib/BCCCronManagerBundle.git
     target=/bundles/BCC/CronManagerBundle
+```
+
+#### If you are using Symfony v2.0.x
+Add to your `/deps` file :
+
+```
+[BCCCronManagerBundle]
+    git=http://github.com/michelsalib/BCCCronManagerBundle.git
+    target=/bundles/BCC/CronManagerBundle
+    version=origin/2.0
 ```
 
 And make a `php bin/vendors install`.
