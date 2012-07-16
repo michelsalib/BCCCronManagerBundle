@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ 'title' | trans({}, 'BCCCronManagerBundle') }}</title>
+    <title>{{ 'BCC Cron Manager' | trans({}, 'BCCCronManagerBundle') }}</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -13,46 +13,7 @@
 
     <!-- Le styles -->
     <link href="{{ asset('bundles/bcccronmanager/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" />
-
-    <style type="text/css">
-        body {
-            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-        }
-
-        .control-group.error label{
-            color: #B94A48;
-        }
-
-        label.span1 {
-            margin-left: 0px;
-            width: 100px;
-        }
-
-        .time-input,
-        .command-input label,
-        .command-input input,
-        .command-input span,
-        .command-input .add-on,
-        .time-menu span
-        {
-            font-size: 20px;
-            height: 26px;
-            line-height: 26px;
-        }
-
-        .command-input .icon-pencil, .time-menu .icon-pencil{
-            vertical-align: baseline;
-        }
-
-        .time-menu .caret {
-            margin-top: 10px;
-        }
-
-        .tooltip {
-            font-size: 20px;
-            line-height: 26px;
-        }
-    </style>
+    <link href="{{ asset('bundles/bcccronmanager/css/main.css') }}" type="text/css" rel="stylesheet" />
 
 </head>
 
@@ -61,21 +22,17 @@
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="{{ path('BCCCronManagerBundle_index') }}">{{ 'title' | trans({}, 'BCCCronManagerBundle') }}</a>
+            <a class="brand" href="{{ path('BCCCronManagerBundle_index') }}">{{ 'BCC Cron Manager' | trans({}, 'BCCCronManagerBundle') }}</a>
         </div>
     </div>
 </div>
 
 <div class="container">
     {% if app.session.hasFlash('message') %}
-        {% for message in app.session.flash('message') %}
-            <div class="alert alert-info">{{ message }}</div>
-        {% endfor %}
+          <div class="alert alert-info">{{ app.session.flash('message') }}</div>
     {% endif %}
     {% if app.session.hasFlash('error') %}
-        {% for error in app.session.flash('error') %}
-            <div class="alert alert-error">{{ error }}</div>
-        {% endfor %}
+          <div class="alert alert-error">{{ app.session.flash('error') }}</div>
     {% endif %}
 
     {% block content %}
@@ -91,7 +48,7 @@
         <pre style="height: 200px; overflow: auto;">test</pre>
     </div>
     <div class="modal-footer">
-        <a class="btn btn-primary" data-dismiss="modal" href="#">{{ 'modal.close' | trans({}, 'BCCCronManagerBundle') }}</a>
+        <a class="btn btn-primary" data-dismiss="modal" href="#">{{ 'Close' | trans({}, 'BCCCronManagerBundle') }}</a>
     </div>
 </div>
 
