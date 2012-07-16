@@ -3,11 +3,11 @@
 {% block content %}
     <section id="edit-cron">
         <div class="page-header">
-            <h1>{{ 'title.edit' | trans({}, 'BCCCronManagerBundle') }}</h1>
+            <h1>{{ 'Edit a cron' | trans({}, 'BCCCronManagerBundle') }}</h1>
         </div>
         <form method="post" action="#">
             {% include 'BCCCronManagerBundle:Default:form.html.twig' with {'form': form} %}
-            <input type="submit" class="btn-success btn-large" value="{{ 'form.edit' | trans({}, 'BCCCronManagerBundle') }}"/>
+            <input type="submit" class="btn-success btn-large" value="{{ 'Edit' | trans({}, 'BCCCronManagerBundle') }}"/>
         </form>
     </section>
 {% endblock %}
