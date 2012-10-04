@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "symfony/symfony": "master"
+        "symfony/symfony": "<=2.2-dev"
     },
     "autoload": {
         "psr-0": { "BCC\\CronManagerBundle": "" }
