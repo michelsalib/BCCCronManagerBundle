@@ -27,11 +27,11 @@ class CronType extends AbstractType
         ));
     }
 
-    public function getDefaultOptions()
+    public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
-        return array(
-            'data_class' => 'BCC\CronManagerBundle\Manager\Cron',
-        );
+        $resolver->setDefaults(array(
+            'data_class' => 'BCC\CronManagerBundle\Manager\Cron'
+        ));
     }
 
     /**
