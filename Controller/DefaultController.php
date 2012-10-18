@@ -153,6 +153,6 @@ class DefaultController extends Controller
         /* @var $session \Symfony\Component\HttpFoundation\Session */
         $session = $this->get('session');
 
-        $session->setFlash($type, \array_merge($session->getFlash($type, array()), array($message)));
+        $session->getFlashBag()->add($type, $message);
     }
 }
