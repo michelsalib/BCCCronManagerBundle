@@ -4,6 +4,7 @@
     "description": "A cron table manager bundle for Symfony2",
     "keywords": ["cron management"],
     "homepage": "http://github.com/michelsalib/BCCCronManagerBundle",
+    "license": "MIT",
     "authors": [
         {
             "name": "Michel Salib",
