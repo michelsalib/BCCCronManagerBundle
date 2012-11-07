@@ -21,7 +21,15 @@ class TwigExtension extends \Twig_Extension
 
     public function __construct($logDir, $kernelDir)
     {
-        $this->wwwUser = \posix_getpwuid(\posix_geteuid());
+        if (function_exists('posix_getpwuid')) {
+            $this->wwwUser = posix_getpwuid(posix_geteuid());
+        }
+        else {
+            $this->wwwUser = array(
+                'name' => get_current_user(),
+                'dir'  => '-',
+            );
+        }
         $this->logDir = $logDir;
         $this->symfonyCommand = 'php '.$kernelDir.'/console';
     }
@@ -29,8 +37,8 @@ class TwigExtension extends \Twig_Extension
     public function getGlobals()
     {
         return array(
-            'wwwUser' => $this->wwwUser,
-            'logDir' => $this->logDir,
+            'wwwUser'        => $this->wwwUser,
+            'logDir'         => $this->logDir,
             'symfonyCommand' => $this->symfonyCommand,
         );
     }
