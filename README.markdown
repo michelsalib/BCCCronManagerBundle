@@ -84,5 +84,10 @@ BCCCronManagerBundle:
     resource: "@BCCCronManagerBundle/Resources/config/routing.xml"
     prefix:   /cron-manager
 ```
-
 You can customize the prefix as you wish.
+
+Install the assets:
+```
+app/console assets:install
+```
+
