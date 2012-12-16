@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>Comment</source>
+        <target>Açıklama</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Day Of Month</source>
+        <target>Ayın Günü</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Day Of Week</source>
+        <target>Haftanın Günü</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Error File</source>
+        <target>Hata Dosyası</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Hour</source>
+        <target>Saat</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Last Runn</source>
+        <target>Son Çalışma Zamanı</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Log File</source>
+        <target>Kayıt Dosyası</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Minute</source>
+        <target>Dakika</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Month</source>
+        <target>Ay</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Time presets</source>
+        <target>Zaman Ön Ayarları</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Raw cron</source>
+        <target>Original Cron</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Add</source>
+        <target>Ekle</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Edit</source>
+        <target>Düzenle</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
+        <target>Cron kullanıcısının %user% ve kök dizininin %root% olduğunu unutmayın.</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Daily</source>
+        <target>Her Gün</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Hourly</source>
+        <target>Her Saat</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Monthly</source>
+        <target>Her Ay</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Symfony command</source>
+        <target>Symfony komutu</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Symfony log directory</source>
+        <target>Symfony kayıt dizini</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Weekly</source>
+        <target>Her Hafta</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Yearly</source>
+        <target>Her Yıl</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Remove</source>
+        <target>Çıkart</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Details</source>
+        <target>Ayrıntılar</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Close</source>
+        <target>Kapat</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>BCC Cron Manager</source>
+        <target>BCC Cron Yöneticisi</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Add a cron</source>
+        <target>Cron ekle</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Edit a cron</source>
+        <target>Cron düzenle</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Cron list</source>
+        <target>Cron listele</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Cron table</source>
+        <target>Cron tablosu</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Success</source>
+        <target>Başarılı</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Unknown</source>
+        <target>Bilinmiyor</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Error</source>
+        <target>Hata</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Command</source>
+        <target>Komut</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>success</source>
+        <target>başarılı</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>unknown</source>
+        <target>bilinmiyor</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>error</source>
+        <target>hata</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
