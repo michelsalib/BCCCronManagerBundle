@@ -23,12 +23,12 @@
         <target>Saat</target>
       </trans-unit>
       <trans-unit id="6">
-        <source>Last Runn</source>
+        <source>Last Run</source>
         <target>Son Çalışma Zamanı</target>
       </trans-unit>
       <trans-unit id="7">
         <source>Log File</source>
-        <target>Kayıt Dosyası</target>
+        <target>Günlük Dosyası</target>
       </trans-unit>
       <trans-unit id="8">
         <source>Minute</source>
@@ -39,12 +39,12 @@
         <target>Ay</target>
       </trans-unit>
       <trans-unit id="10">
-        <source>Time presets</source>
+        <source>Time Presets</source>
         <target>Zaman Ön Ayarları</target>
       </trans-unit>
       <trans-unit id="11">
         <source>Raw cron</source>
-        <target>Original Cron</target>
+        <target>Cron</target>
       </trans-unit>
       <trans-unit id="12">
         <source>Add</source>
@@ -71,12 +71,12 @@
         <target>Her Ay</target>
       </trans-unit>
       <trans-unit id="18">
-        <source>Symfony command</source>
-        <target>Symfony komutu</target>
+        <source>Symfony Command</source>
+        <target>Symfony Komutu</target>
       </trans-unit>
       <trans-unit id="19">
         <source>Symfony log directory</source>
-        <target>Symfony kayıt dizini</target>
+        <target>Symfony günlük dizini</target>
       </trans-unit>
       <trans-unit id="20">
         <source>Weekly</source>
@@ -88,7 +88,7 @@
       </trans-unit>
       <trans-unit id="22">
         <source>Remove</source>
-        <target>Çıkart</target>
+        <target>Sil</target>
       </trans-unit>
       <trans-unit id="23">
         <source>Details</source>
