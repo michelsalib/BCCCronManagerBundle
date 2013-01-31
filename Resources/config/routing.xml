@@ -17,6 +17,14 @@
         <requirement key="_method">POST</requirement>
     </route>
 
+    <route id="BCCCronManagerBundle_wakeup" pattern="/{id}/wakeup">
+        <default key="_controller">BCCCronManagerBundle:Default:wakeup</default>
+    </route>
+
+    <route id="BCCCronManagerBundle_suspend" pattern="/{id}/suspend">
+        <default key="_controller">BCCCronManagerBundle:Default:suspend</default>
+    </route>
+
     <route id="BCCCronManagerBundle_remove" pattern="/{id}/remove">
         <default key="_controller">BCCCronManagerBundle:Default:remove</default>
     </route>

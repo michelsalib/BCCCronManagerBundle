@@ -40,7 +40,7 @@ class CronManager
 
         foreach ($lines as $lineNumber => $line) {
             // if line is nt a comment, convert it to a cron
-            if (0 !== \strpos($line, '#', 0)) {
+            if (\strpos($line, '#suspended: ', 0) === 0 || 0 !== \strpos($line, '#', 0)) {
                 $line = Cron::parse($line);
             }
             $this->lines['l'.$lineNumber] = $line;
