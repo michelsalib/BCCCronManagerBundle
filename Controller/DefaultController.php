@@ -98,6 +98,46 @@ class DefaultController extends Controller
     }
 
     /**
+     * Wake up a cron from the cron table
+     *
+     * @param $id The line of the cron in the cron table
+     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
+     */
+    public function wakeupAction($id)
+    {
+        $cm = new CronManager();
+        $crons = $cm->get();
+        $this->addFlash('message', $cm->getOutput());
+        $this->addFlash('error', $cm->getError());
+        $crons[$id]->setSuspended(false);
+        $cm->write();
+        $this->addFlash('message', $cm->getOutput());
+        $this->addFlash('error', $cm->getError());
+
+        return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
+    }
+
+    /**
+     * Suspend a cron from the cron table
+     *
+     * @param $id The line of the cron in the cron table
+     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
+     */
+    public function suspendAction($id)
+    {
+        $cm = new CronManager();
+        $crons = $cm->get();
+        $this->addFlash('message', $cm->getOutput());
+        $this->addFlash('error', $cm->getError());
+        $crons[$id]->setSuspended(true);
+        $cm->write();
+        $this->addFlash('message', $cm->getOutput());
+        $this->addFlash('error', $cm->getError());
+
+        return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
+    }
+
+    /**
      * Remove a cron from the cron table
      *
      * @param $id The line of the cron in the cron table

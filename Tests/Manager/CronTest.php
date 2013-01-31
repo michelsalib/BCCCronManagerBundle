@@ -23,6 +23,10 @@ class CronTest extends \PHPUnit_Framework_TestCase
 
         // ASSERT
         $this->assertSame('1 2 3 4 5 ls > output.log 2> error.log #comment', (string)$cron);
+
+        // SUSPENDED
+        $cron->setSuspended(true);
+        $this->assertSame('# 1 2 3 4 5 ls > output.log 2> error.log #comment', (string)$cron);
     }
 
     public function testParse(){
@@ -41,5 +45,9 @@ class CronTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(3, $cron->getDayOfMonth());
         $this->assertEquals(4, $cron->getMonth());
         $this->assertEquals(5, $cron->getDayOfWeek());
+        $this->assertEquals(false, $cron->isSuspended());
+
+        $cron = Cron::parse('# 1 2 3 4 5 ls > output.log 2> error.log #comment');
+        $this->assertEquals(true, $cron->isSuspended());
     }
 }
