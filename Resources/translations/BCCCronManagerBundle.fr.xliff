@@ -146,6 +146,14 @@
         <source>error</source>
         <target>erreur</target>
       </trans-unit>
+      <trans-unit id="37">
+        <source>Wake up</source>
+        <target>Réveiller</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Suspend</source>
+        <target>Suspendre</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

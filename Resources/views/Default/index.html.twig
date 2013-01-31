@@ -12,7 +12,7 @@
                         {{ cron.status | trans({}, 'BCCCronManagerBundle') }}
                     </span>
                 </div>
-                <h2 class="span">
+                <h2 class="span{% if cron.suspended %} muted{% endif %}">
                     {{ cron.expression }} {{ cron.command }}
                 </h2>
                 <button class="btn pull-right" data-toggle="collapse" data-target="#cron-{{ index }}"><i class="icon-search"></i>{{ 'Details' | trans({}, 'BCCCronManagerBundle') }}</button>
@@ -72,6 +72,19 @@
                                     <i class="icon-edit icon-white"></i>
                                     {{ 'Edit' | trans({}, 'BCCCronManagerBundle') }}
                                 </a>
+                                {% if cron.suspended %}
+                                    <a class="btn btn-success"
+                                       href="{{ path('BCCCronManagerBundle_wakeup', {'id':index}) }}">
+                                        <i class="icon-play icon-white"></i>
+                                        {{ 'Wake up' | trans({}, 'BCCCronManagerBundle') }}
+                                    </a>
+                                {% else %}
+                                    <a class="btn btn-warning"
+                                       href="{{ path('BCCCronManagerBundle_suspend', {'id':index}) }}">
+                                        <i class="icon-pause icon-white"></i>
+                                        {{ 'Suspend' | trans({}, 'BCCCronManagerBundle') }}
+                                    </a>
+                                {% endif %}
                                 <a class="btn btn-danger"
                                    href="{{ path('BCCCronManagerBundle_remove', {'id':index}) }}">
                                     <i class="icon-trash icon-white"></i>

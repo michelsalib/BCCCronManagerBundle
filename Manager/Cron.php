@@ -87,6 +87,14 @@ class Cron
     protected $comment;
 
     /**
+     * isSuspended
+     * 
+     * @var boolean
+     * @access protected
+     */
+    protected $isSuspended = false;
+
+    /**
      * Parses a cron line into a Cron instance
      *
      * TODO: this deserves a serious regex
@@ -97,7 +105,13 @@ class Cron
      */
     public static function parse($cron)
     {
+        if (substr($cron, 0, 12) == '#suspended: ') {
+            $cron = substr($cron, 12);
+            $isSuspended = true;
+        }
+
         $parts = \explode(' ', $cron);
+
         $command = \implode(' ',\array_slice($parts, 5));
 
         // extract comment
@@ -153,6 +167,9 @@ class Cron
         $cron->setLogSize($logSize);
         $cron->setErrorSize($errorSize);
         $cron->setStatus($status);
+        if (isset($isSuspended)) {
+            $cron->setSuspended($isSuspended);
+        }
         if (isset($comment)) {
             $cron->setComment($comment);
         }
@@ -385,13 +402,43 @@ class Cron
     }
 
     /**
+     * Gets the value of isSuspended
+     *
+     * @return boolean
+     */
+    public function isSuspended()
+    {
+        return $this->isSuspended;
+    }
+    
+    /**
+     * Sets the value of isSuspended
+     *
+     * @param boolean $suspended status
+     *
+     * @return Cron
+     */
+    public function setSuspended($isSuspended = true)
+    {
+        if ($this->isSuspended != $isSuspended) {
+            $this->isSuspended = $isSuspended;
+        }
+        return $this;
+    }
+
+    /**
      * Transforms the cron instance into a cron line
      *
      * @return string
      */
     public function __toString()
     {
-        $cronLine = $this->getExpression().' '.$this->command;
+        $cronLine = '';
+        if ($this->isSuspended()) {
+            $cronLine .= '#suspended: ';
+        }
+
+        $cronLine .= $this->getExpression().' '.$this->command;
         if ('' != $this->logFile) {
             $cronLine .= ' > '.$this->logFile;
         }
