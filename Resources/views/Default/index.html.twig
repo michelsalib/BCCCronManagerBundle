@@ -3,7 +3,7 @@
 {% block content %}
     <section id="existing-crons">
         <div class="page-header">
-            <h1>{{ 'Cron list' | trans({}, 'BCCCronManagerBundle') }}</h1>
+            <h2>{{ 'Cron list' | trans({}, 'BCCCronManagerBundle') }}</h2>
         </div>
         {% for index, cron in crons %}
             <div class="row">
@@ -12,9 +12,9 @@
                         {{ cron.status | trans({}, 'BCCCronManagerBundle') }}
                     </span>
                 </div>
-                <h2 class="span{% if cron.suspended %} muted{% endif %}">
+                <h3 class="span{% if cron.suspended %} muted{% endif %}">
                     {{ cron.expression }} {{ cron.command }}
-                </h2>
+                </h3>
                 <button class="btn pull-right" data-toggle="collapse" data-target="#cron-{{ index }}"><i class="icon-search"></i>{{ 'Details' | trans({}, 'BCCCronManagerBundle') }}</button>
             </div>
             <div class="collapse in" id="cron-{{ index }}">
@@ -100,7 +100,7 @@
     </section>
     <section id="add-cron">
         <div class="page-header">
-            <h1>{{ 'Add a cron' | trans({}, 'BCCCronManagerBundle') }}</h1>
+            <h2>{{ 'Add a cron' | trans({}, 'BCCCronManagerBundle') }}</h2>
         </div>
         <form method="post" action="{{ path('BCCCronManagerBundle_add') }}">
             {% include 'BCCCronManagerBundle:Default:form.html.twig' with {'form': form} %}
@@ -109,7 +109,7 @@
     </section>
     <section id="raw-crons">
         <div class="page-header">
-            <h1>{{ 'Cron table' | trans({}, 'BCCCronManagerBundle') }}</h1>
+            <h2>{{ 'Cron table' | trans({}, 'BCCCronManagerBundle') }}</h2>
         </div>
         <pre>{{ raw }}</pre>
     </section>

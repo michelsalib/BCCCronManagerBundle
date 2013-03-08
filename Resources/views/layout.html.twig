@@ -12,14 +12,19 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="{{ asset('bundles/bcccronmanager/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" />
-    <link href="{{ asset('bundles/bcccronmanager/css/main.css') }}" type="text/css" rel="stylesheet" />
+    {% stylesheets
+        '@bootstrap_less'
+        '@BCCCronManagerBundle/Resources/public/css/main.css'
+        combine=true
+    %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+    {% endstylesheets %}
 
 </head>
 
 <body>
 
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
             <a class="brand" href="{{ path('BCCCronManagerBundle_index') }}">{{ 'BCC Cron Manager' | trans({}, 'BCCCronManagerBundle') }}</a>
@@ -51,10 +56,14 @@
         <a class="btn btn-primary" data-dismiss="modal" href="#">{{ 'Close' | trans({}, 'BCCCronManagerBundle') }}</a>
     </div>
 </div>
-
-<script src="{{ asset('bundles/bcccronmanager/js/jquery.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('bundles/bcccronmanager/js/bootstrap.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('bundles/bcccronmanager/js/script.js') }}" type="text/javascript"></script>
+{% javascripts
+    '@jquery_js'
+    '@bootstrap_js'
+    '@BCCCronManagerBundle/Resources/public/js/script.js'
+    combine=true
+%}
+     <script src="{{ asset_url }}"></script>
+{% endjavascripts %}
 
 </body>
 </html>
