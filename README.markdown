@@ -25,16 +25,23 @@ It is a bundle that provides a web interface for managing cron table.
 
 ### Get the bundle
 
-#### If you are using Symfony master
-Add to your `/deps` file :
+#### If you are using Symfony 2.1/2.2/master
 
+Add BCCCronManagerBundle to your composer.json:
+
+``` js
+{
+    "require": {
+        "bcc/cron-manager-bundle": "dev-master"
+    }
+}
 ```
-[BCCCronManagerBundle]
-    git=http://github.com/michelsalib/BCCCronManagerBundle.git
-    target=/bundles/BCC/CronManagerBundle
+Now tell composer to download the bundle by running the command:
+``` bash
+php composer.phar update bcc/cron-manager-bundle
 ```
 
-#### If you are using Symfony v2.0.x
+#### If you are using Symfony 2.0.x
 Add to your `/deps` file :
 
 ```
@@ -46,7 +53,7 @@ Add to your `/deps` file :
 
 And make a `php bin/vendors install`.
 
-### Register the namespace
+##### Register the namespace (only for Symfony 2.0.x)
 
 ``` php
 <?php
@@ -86,8 +93,12 @@ BCCCronManagerBundle:
 ```
 You can customize the prefix as you wish.
 
-Install the assets:
-```
-app/console assets:install
+### Import the Assetic configuration
+
+Add the Assetic configuration file to the `imports` section of your `config.yml`:
+
+``` yml
+imports:
+    - { resource: @BCCCronManagerBundle/Resources/config/assetic.yml }
 ```
 

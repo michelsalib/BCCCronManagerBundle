@@ -1,0 +1,32 @@
+assetic:
+    bundles:        [BCCCronManagerBundle]
+    filters:
+        cssembed:
+            jar: %kernel.root_dir%/../vendor/bcc/cron-manager-bundle/BCC/CronManagerBundle/Resources/java/cssembed-0.4.5.jar
+        lessphp:
+            file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
+            apply_to: "\.less$"
+    assets:
+        jquery_js:
+            inputs:
+                - '%kernel.root_dir%/../vendor/components/jquery/jquery.min.js'
+        bootstrap_js:
+            inputs:
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-transition.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-alert.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-modal.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-dropdown.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-scrollspy.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-tab.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-tooltip.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-popover.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-button.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-collapse.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-carousel.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-typeahead.js'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-affix.js'
+        bootstrap_less:
+            inputs:
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/less/bootstrap.less'
+                - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/less/responsive.less'
+            filters: [lessphp,cssembed]
