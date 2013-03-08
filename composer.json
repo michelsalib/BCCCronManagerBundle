@@ -13,8 +13,13 @@
         }
     ],
     "require": {
-        "symfony/symfony": "<=2.2.x-dev"
+        "symfony/symfony": "<=2.2.x-dev",
+        "symfony/assetic-bundle": "2.1.*",
+        "leafo/lessphp": "0.3.*",
+        "twitter/bootstrap": "v2.2.2",
+        "components/jquery": "1.8.3"
     },
+    "minimum-stability": "alpha",
     "autoload": {
         "psr-0": { "BCC\\CronManagerBundle": "" }
     },
