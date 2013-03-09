@@ -1,8 +1,7 @@
 assetic:
     bundles:        [BCCCronManagerBundle]
     filters:
-        cssembed:
-            jar: %kernel.root_dir%/../vendor/bcc/cron-manager-bundle/BCC/CronManagerBundle/Resources/java/cssembed-0.4.5.jar
+        phpcssembed: ~
         lessphp:
             file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
             apply_to: "\.less$"
@@ -29,4 +28,4 @@ assetic:
             inputs:
                 - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/less/bootstrap.less'
                 - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/less/responsive.less'
-            filters: [lessphp,cssembed]
+            filters: [lessphp,phpcssembed]
