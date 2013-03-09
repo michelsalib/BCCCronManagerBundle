@@ -33,12 +33,13 @@
 </div>
 
 <div class="container">
-    {% if app.session.hasFlash('message') %}
-          <div class="alert alert-info">{{ app.session.flash('message') }}</div>
-    {% endif %}
-    {% if app.session.hasFlash('error') %}
-          <div class="alert alert-error">{{ app.session.flash('error') }}</div>
-    {% endif %}
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+          <div class="alert alert-info">{{ flashMessage }}</div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('error') %}
+          <div class="alert alert-error">{{ flashMessage }}</div>
+    {% endfor %}
 
     {% block content %}
     {% endblock %}
