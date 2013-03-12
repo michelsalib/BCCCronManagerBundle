@@ -5,7 +5,6 @@ assetic:
             jar: %kernel.root_dir%/../vendor/bcc/cron-manager-bundle/BCC/CronManagerBundle/Resources/java/cssembed-0.4.5.jar
         lessphp:
             file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
-            apply_to: "\.less$"
     assets:
         jquery_js:
             inputs:
