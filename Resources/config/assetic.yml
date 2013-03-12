@@ -4,7 +4,6 @@ assetic:
         phpcssembed: ~
         lessphp:
             file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
-            apply_to: "\.less$"
     assets:
         jquery_js:
             inputs:
