@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="4">
         <source>Error File</source>
-        <target>Plik błędu</target>
+        <target>Plik z błędami</target>
       </trans-unit>
       <trans-unit id="5">
         <source>Hour</source>
@@ -28,7 +28,7 @@
       </trans-unit>
       <trans-unit id="7">
         <source>Log File</source>
-        <target>Plik logów</target>
+        <target>Plik z logami</target>
       </trans-unit>
       <trans-unit id="8">
         <source>Minute</source>
@@ -40,7 +40,7 @@
       </trans-unit>
       <trans-unit id="10">
         <source>Time presets</source>
-        <target>Obecnie</target>
+        <target>Znaczniki czasu</target>
       </trans-unit>
       <trans-unit id="11">
         <source>Raw cron</source>
@@ -56,35 +56,35 @@
       </trans-unit>
       <trans-unit id="14">
         <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
-        <target>Użytkownik CRON to %user% oraz jego katalog domowy to %root%.</target>
+        <target>Użytkownik CRON to %user%, a jego katalog domowy to %root%.</target>
       </trans-unit>
       <trans-unit id="15">
         <source>Daily</source>
-        <target>Dziennie</target>
+        <target>codziennie</target>
       </trans-unit>
       <trans-unit id="16">
         <source>Hourly</source>
-        <target>Godzinowo</target>
+        <target>co godzinę</target>
       </trans-unit>
       <trans-unit id="17">
         <source>Monthly</source>
-        <target>Miesięcznie</target>
+        <target>co miesiąc</target>
       </trans-unit>
       <trans-unit id="18">
         <source>Symfony command</source>
-        <target>Komenda Symfony</target>
+        <target>Domyślna</target>
       </trans-unit>
       <trans-unit id="19">
         <source>Symfony log directory</source>
-        <target>Katalog logów Symfony</target>
+        <target>Katalog z logami</target>
       </trans-unit>
       <trans-unit id="20">
         <source>Weekly</source>
-        <target>Tygodniowo</target>
+        <target>co tydzień</target>
       </trans-unit>
       <trans-unit id="21">
         <source>Yearly</source>
-        <target>Rocznie</target>
+        <target>co rok</target>
       </trans-unit>
       <trans-unit id="22">
         <source>Remove</source>
