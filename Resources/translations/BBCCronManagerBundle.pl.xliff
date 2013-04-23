@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>Comment</source>
+        <target>Komentarz</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Day Of Month</source>
+        <target>Dzień miesiąca</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Day Of Week</source>
+        <target>Dzień tygodnia</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Error File</source>
+        <target>Plik błędu</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Hour</source>
+        <target>Godzina</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Last Runn</source>
+        <target>Ostatnie uruchomienie</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Log File</source>
+        <target>Plik logów</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Minute</source>
+        <target>Minuta</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Month</source>
+        <target>Miesiąc</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Time presets</source>
+        <target>Obecnie</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Raw cron</source>
+        <target>Oryginalny crontab</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Add</source>
+        <target>Dodaj</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Edit</source>
+        <target>Edytuj</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
+        <target>Użytkownik CRON to %user% oraz jego katalog domowy to %root%.</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Daily</source>
+        <target>Dziennie</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Hourly</source>
+        <target>Godzinowo</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Monthly</source>
+        <target>Miesięcznie</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Symfony command</source>
+        <target>Komenda Symfony</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Symfony log directory</source>
+        <target>Katalog logów Symfony</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Weekly</source>
+        <target>Tygodniowo</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Yearly</source>
+        <target>Rocznie</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Remove</source>
+        <target>Usuń</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Details</source>
+        <target>Szczegóły</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Close</source>
+        <target>Zamknij</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>BCC Cron Manager</source>
+        <target>BCC Cron Manager</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Add a cron</source>
+        <target>Dodaj zadanie cron</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Edit a cron</source>
+        <target>Edytuj zadanie cron</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Cron list</source>
+        <target>Lista zadań cron</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Cron table</source>
+        <target>Tabela zadań cron</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Success</source>
+        <target>Sukces</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Unknown</source>
+        <target>Nieznany</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Error</source>
+        <target>Błąd</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Command</source>
+        <target>Komenda</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>success</source>
+        <target>sukces</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>unknown</source>
+        <target>nieznany</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>error</source>
+        <target>błąd</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Wake up</source>
+        <target>Uruchom</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Suspend</source>
+        <target>Zatrzymaj</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
