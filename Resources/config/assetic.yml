@@ -7,7 +7,7 @@ assetic:
     assets:
         jquery_js:
             inputs:
-                - '%kernel.root_dir%/../vendor/components/jquery/jquery.min.js'
+                - '%kernel.root_dir%/../components/jquery/jquery.min.js'
         bootstrap_js:
             inputs:
                 - '%kernel.root_dir%/../vendor/twitter/bootstrap/twitter/bootstrap/js/bootstrap-transition.js'
