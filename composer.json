@@ -16,7 +16,7 @@
         "symfony/symfony": "2.3.*",
         "symfony/assetic-bundle": "2.3.*",
         "leafo/lessphp": "0.3.*",
-        "twbs/bootstrap": "2.*",
+        "twbs/bootstrap": "2.3.*",
         "components/jquery": "1.8.3",
         "ptachoire/cssembed": "v1.0.0"
     },
