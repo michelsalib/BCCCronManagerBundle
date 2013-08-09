@@ -25,17 +25,38 @@ It is a bundle that provides a web interface for managing cron table.
 
 ### Get the bundle
 
-#### If you are using Symfony 2.1/2.2/master
+#### If you are using Symfony 2.3
 
 Add BCCCronManagerBundle to your composer.json:
 
 ``` js
 {
     "require": {
-        "bcc/cron-manager-bundle": "dev-master"
+        "bcc/cron-manager-bundle": "2.3.*@dev"
     }
 }
 ```
+Now tell composer to download the bundle by running the command:
+``` bash
+php composer.phar update bcc/cron-manager-bundle
+```
+
+#### If you are using Symfony 2.1/2.2/2.3
+
+Add BCCCronManagerBundle to your composer.json:
+
+in 2.1/2.2
+
+``` js
+    "bcc/cron-manager-bundle": "2.2.*@dev"
+```
+
+in 2.3
+
+``` js
+    "bcc/cron-manager-bundle": "2.3.*@dev"
+```
+
 Now tell composer to download the bundle by running the command:
 ``` bash
 php composer.phar update bcc/cron-manager-bundle
