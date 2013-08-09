@@ -48,7 +48,7 @@ class DefaultController extends Controller
 
         $request = $this->get('request');
         if ('POST' == $request->getMethod()) {
-            $form->bindRequest($request);
+            $form->handleRequest($request);
             if ($form->isValid()) {
                 $cm->add($cron);
                 $this->addFlash('message', $cm->getOutput());
@@ -81,7 +81,7 @@ class DefaultController extends Controller
 
         $request = $this->get('request');
         if ('POST' == $request->getMethod()) {
-            $form->bindRequest($request);
+            $form->handleRequest($request);
             if ($form->isValid()) {
                 $cm->write();
 
