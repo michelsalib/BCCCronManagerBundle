@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "symfony/symfony": "2.3.*",
+        "symfony/symfony": "2.*",
         "symfony/assetic-bundle": "2.3.*",
         "leafo/lessphp": "0.3.*",
         "twbs/bootstrap": "2.3.*",
