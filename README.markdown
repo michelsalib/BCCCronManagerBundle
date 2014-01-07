@@ -25,7 +25,7 @@ It is a bundle that provides a web interface for managing cron table.
 
 ### Get the bundle
 
-#### If you are using Symfony 2.1/2.2/2.3
+#### If you are using Symfony 2.1 and more
 
 Add BCCCronManagerBundle to your composer.json:
 
@@ -38,7 +38,13 @@ In 2.1/2.2 :
 In 2.3 :
 
 ``` js
-    "bcc/cron-manager-bundle": "2.3.*@dev"
+    "bcc/cron-manager-bundle": "v2.3.0"
+```
+
+In 2.4 (Twitter Bootrap 2.*) :
+
+``` js
+    "bcc/cron-manager-bundle": "v2.4.0"
 ```
 
 Now tell composer to download the bundle by running the command:
