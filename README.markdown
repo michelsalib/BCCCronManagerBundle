@@ -41,10 +41,24 @@ In 2.3 :
     "bcc/cron-manager-bundle": "v2.3.0"
 ```
 
-In 2.4 (Twitter Bootrap 2.*) :
+In 2.4 and more (Twitter Bootrap 2.*) :
 
 ``` js
     "bcc/cron-manager-bundle": "v2.4.0"
+```
+
+In 2.4 and more (Twitter Bootrap 3.*) :
+
+``` js
+    "bcc/cron-manager-bundle": "v2.4.1"
+```
+    For Bootstrap 3, do not forget to add your own Less filter like this in your config.yml :
+```
+    filters:
+        less:
+            node:       %node%
+            node_paths: [%node_paths%]
+            apply_to: "\.less$"
 ```
 
 Now tell composer to download the bundle by running the command:
