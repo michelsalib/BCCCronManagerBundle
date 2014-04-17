@@ -52,7 +52,7 @@ In 2.4 and more (Twitter Bootrap 3.*) :
 ``` js
     "bcc/cron-manager-bundle": "v2.4.1"
 ```
-    For Bootstrap 3, do not forget to add your own Less filter like this in your config.yml :
+For Bootstrap 3, do not forget to add your own Less filter like this in your config.yml :
 ```
     filters:
         less:
