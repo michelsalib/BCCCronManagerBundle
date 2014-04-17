@@ -1,9 +1,5 @@
 assetic:
     bundles:        [BCCCronManagerBundle]
-    filters:
-        phpcssembed: ~
-        lessphp:
-            file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
     assets:
         jquery_js:
             inputs:
@@ -25,5 +21,3 @@ assetic:
         bootstrap_less:
             inputs:
                 - '%kernel.root_dir%/../vendor/twbs/bootstrap/less/bootstrap.less'
-                - '%kernel.root_dir%/../vendor/twbs/bootstrap/less/responsive-utilities.less'
-            filters: [lessphp,phpcssembed]
