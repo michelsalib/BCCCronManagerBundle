@@ -15,7 +15,7 @@
                 <h3 class="span{% if cron.suspended %} muted{% endif %}">
                     {{ cron.expression }} {{ cron.command }}
                 </h3>
-                <button class="btn pull-right" data-toggle="collapse" data-target="#cron-{{ index }}"><i class="icon-search"></i>{{ 'Details' | trans({}, 'BCCCronManagerBundle') }}</button>
+                <button class="btn btn-default pull-right" data-toggle="collapse" data-target="#cron-{{ index }}"><i class="icon-search"></i>{{ 'Details' | trans({}, 'BCCCronManagerBundle') }}</button>
             </div>
             <div class="collapse in" id="cron-{{ index }}">
                 <table class="table table-striped" >
@@ -35,7 +35,7 @@
                             <td>{{ cron.logFile }}</td>
                             <td>
                                 {% if cron.logSize %}
-                                    <a class="btn btn-info pull-right modal-link"
+                                    <a class="btn btn-default btn-info pull-right modal-link"
                                             href="{{ path('BCCCronManagerBundle_file', {'id':index, 'type': 'log'}) }}">
                                         <i class="icon-search icon-white"></i>
                                         {{ 'Log File' | trans({}, 'BCCCronManagerBundle') }}
@@ -50,7 +50,7 @@
                             <td>{{ cron.errorFile }}</td>
                             <td>
                                 {% if cron.errorSize %}
-                                    <a class="btn btn-info pull-right modal-link"
+                                    <a class="btn btn-default btn-info pull-right modal-link"
                                             href="{{ path('BCCCronManagerBundle_file', {'id':index, 'type': 'error'}) }}">
                                         <i class="icon-search icon-white"></i>
                                         {{ 'Error file' | trans({}, 'BCCCronManagerBundle') }}
@@ -67,25 +67,25 @@
                         <th></th>
                         <td colspan="2">
                             <span class="pull-right">
-                                <a class="btn btn-primary"
+                                <a class="btn btn-default btn-primary"
                                    href="{{ path('BCCCronManagerBundle_edit', {'id':index}) }}">
                                     <i class="icon-edit icon-white"></i>
                                     {{ 'Edit' | trans({}, 'BCCCronManagerBundle') }}
                                 </a>
                                 {% if cron.suspended %}
-                                    <a class="btn btn-success"
+                                    <a class="btn btn-default btn-success"
                                        href="{{ path('BCCCronManagerBundle_wakeup', {'id':index}) }}">
                                         <i class="icon-play icon-white"></i>
                                         {{ 'Wake up' | trans({}, 'BCCCronManagerBundle') }}
                                     </a>
                                 {% else %}
-                                    <a class="btn btn-warning"
+                                    <a class="btn btn-default btn-warning"
                                        href="{{ path('BCCCronManagerBundle_suspend', {'id':index}) }}">
                                         <i class="icon-pause icon-white"></i>
                                         {{ 'Suspend' | trans({}, 'BCCCronManagerBundle') }}
                                     </a>
                                 {% endif %}
-                                <a class="btn btn-danger"
+                                <a class="btn btn-default btn-danger"
                                    href="{{ path('BCCCronManagerBundle_remove', {'id':index}) }}">
                                     <i class="icon-trash icon-white"></i>
                                     {{ 'Remove' | trans({}, 'BCCCronManagerBundle') }}
@@ -102,9 +102,9 @@
         <div class="page-header">
             <h2>{{ 'Add a cron' | trans({}, 'BCCCronManagerBundle') }}</h2>
         </div>
-        <form method="post" action="{{ path('BCCCronManagerBundle_add') }}">
+        <form role="form" method="post" action="{{ path('BCCCronManagerBundle_add') }}">
             {% include 'BCCCronManagerBundle:Default:form.html.twig' with {'form': form} %}
-            <input type="submit" class="btn-success btn-large" value="{{ 'Add' | trans({}, 'BCCCronManagerBundle') }}"/>
+            <input type="submit" class="btn btn-success btn-lg" value="{{ 'Add' | trans({}, 'BCCCronManagerBundle') }}"/>
         </form>
     </section>
     <section id="raw-crons">

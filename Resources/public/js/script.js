@@ -32,7 +32,8 @@ $(document).ready(function(){
 
     $('.log-preset').on('click', function(){
         var $button = $(this);
-        $button.prev().find('input').val($button.attr('value'));
+
+        $button.parent().parent().find('input').val($button.attr('value'));
     });
 
     $('.modal-link').on('click', function (e) {

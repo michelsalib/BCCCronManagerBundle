@@ -3,7 +3,7 @@
         {% if errors|length > 0 %}
             <div class="span">
                 {% for error in errors %}
-                    <span class="label label-important">{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}</span>
+                    <span class="label label-danger">{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}</span>
                 {% endfor %}
             </div>
         {% endif %}

@@ -6,24 +6,8 @@ body {
     color: #B94A48;
 }
 
-label.span1 {
-    margin-left: 0px;
-    width: 100px;
-}
-
-.time-input,
-.command-input label,
-.command-input input,
-.command-input span,
-.command-input .add-on,
-.time-menu span {
-    font-size: 20px;
-    height: 26px;
-    line-height: 26px;
-}
-
-.command-input .icon-pencil, .time-menu .icon-pencil {
-    vertical-align: baseline;
+.command-input  {
+    padding-top: 20px;
 }
 
 .time-menu .caret {

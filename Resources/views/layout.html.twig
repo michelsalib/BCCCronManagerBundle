@@ -27,7 +27,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="{{ path('BCCCronManagerBundle_index') }}">{{ 'BCC Cron Manager' | trans({}, 'BCCCronManagerBundle') }}</a>
+            <a class="navbar-brand" href="{{ path('BCCCronManagerBundle_index') }}">{{ 'BCC Cron Manager' | trans({}, 'BCCCronManagerBundle') }}</a>
         </div>
     </div>
 </div>
@@ -38,23 +38,27 @@
     {% endfor %}
 
     {% for flashMessage in app.session.flashbag.get('error') %}
-          <div class="alert alert-error">{{ flashMessage }}</div>
+          <div class="alert alert-danger">{{ flashMessage }}</div>
     {% endfor %}
 
     {% block content %}
     {% endblock %}
 </div>
 
-<div class="modal hide" id="modal">
-    <div class="modal-header">
-        <a class="close" data-dismiss="modal" href="#">×</a>
-        <h3></h3>
-    </div>
-    <div class="modal-body">
-        <pre style="height: 200px; overflow: auto;">test</pre>
-    </div>
-    <div class="modal-footer">
-        <a class="btn btn-primary" data-dismiss="modal" href="#">{{ 'Close' | trans({}, 'BCCCronManagerBundle') }}</a>
+<div class="modal" id="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal" href="#">×</a>
+                <h3></h3>
+            </div>
+            <div class="modal-body">
+                <pre style="height: 200px; overflow: auto;">test</pre>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default btn-primary" data-dismiss="modal" href="#">{{ 'Close' | trans({}, 'BCCCronManagerBundle') }}</a>
+            </div>
+        </div>
     </div>
 </div>
 {% javascripts
