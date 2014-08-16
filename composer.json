@@ -14,9 +14,7 @@
     ],
     "require": {
         "symfony/symfony": "~2",
-        "symfony/assetic-bundle": "~2",
-        "twbs/bootstrap": "~3",
-        "components/jquery": "1.*"
+        "symfony/assetic-bundle": "~2"
     },
     "minimum-stability": "alpha",
     "autoload": {
