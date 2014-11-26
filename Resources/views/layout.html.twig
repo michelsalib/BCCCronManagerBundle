@@ -11,9 +11,10 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
     <!-- Le styles -->
     {% stylesheets
-        '@bootstrap_less'
         '@BCCCronManagerBundle/Resources/public/css/main.css'
         combine=true
     %}
@@ -61,9 +62,9 @@
         </div>
     </div>
 </div>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 {% javascripts
-    '@jquery_js'
-    '@bootstrap_js'
     '@BCCCronManagerBundle/Resources/public/js/script.js'
     combine=true
 %}
