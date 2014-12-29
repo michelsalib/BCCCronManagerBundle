@@ -26,3 +26,7 @@ body {
 .table th i {
     margin-right: 5px;
 }
+
+.modal-header, table td pre {
+    white-space: pre-wrap;
+}
