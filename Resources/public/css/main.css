@@ -30,3 +30,7 @@ body {
 .modal-header, table td pre {
     white-space: pre-wrap;
 }
+
+.glyphicon-white, .glyphicon-white a {
+    color: #fff;
+}
