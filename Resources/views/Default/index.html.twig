@@ -8,7 +8,7 @@
         {% for index, cron in crons %}
             <div class="row">
                 <div class="span2">
-                    <span class="label label-{% if cron.status == 'error' %}important{% elseif cron.status == 'unknown' %}warning{%else%}success{% endif %}">
+                    <span class="label label-{% if cron.status == 'error' %}danger{% elseif cron.status == 'unknown' %}warning{%else%}success{% endif %}">
                         {{ cron.status | trans({}, 'BCCCronManagerBundle') }}
                     </span>
                 </div>
