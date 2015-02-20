@@ -119,38 +119,26 @@
         <target>Table des crons</target>
       </trans-unit>
       <trans-unit id="30">
-        <source>Success</source>
-        <target>Succès</target>
-      </trans-unit>
-      <trans-unit id="31">
-        <source>Unknown</source>
-        <target>Inconnu</target>
-      </trans-unit>
-      <trans-unit id="32">
-        <source>Error</source>
-        <target>Erreur</target>
-      </trans-unit>
-      <trans-unit id="33">
         <source>Command</source>
         <target>Commande</target>
       </trans-unit>
-      <trans-unit id="34">
+      <trans-unit id="31">
         <source>success</source>
         <target>succès</target>
       </trans-unit>
-      <trans-unit id="35">
+      <trans-unit id="32">
         <source>unknown</source>
         <target>unconnu</target>
       </trans-unit>
-      <trans-unit id="36">
+      <trans-unit id="33">
         <source>error</source>
         <target>erreur</target>
       </trans-unit>
-      <trans-unit id="37">
+      <trans-unit id="34">
         <source>Wake up</source>
         <target>Réveiller</target>
       </trans-unit>
-      <trans-unit id="38">
+      <trans-unit id="35">
         <source>Suspend</source>
         <target>Suspendre</target>
       </trans-unit>
