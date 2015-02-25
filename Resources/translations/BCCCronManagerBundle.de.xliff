@@ -119,38 +119,26 @@
         <target>Crontabelle</target>
       </trans-unit>
       <trans-unit id="30">
-        <source>Success</source>
-        <target>Erfolgreich</target>
-      </trans-unit>
-      <trans-unit id="31">
-        <source>Unknown</source>
-        <target>Unbekannt</target>
-      </trans-unit>
-      <trans-unit id="32">
-        <source>Error</source>
-        <target>Fehler</target>
-      </trans-unit>
-      <trans-unit id="33">
         <source>Command</source>
         <target>Befehl</target>
       </trans-unit>
-      <trans-unit id="34">
+      <trans-unit id="31">
         <source>success</source>
         <target>erfolgreich</target>
       </trans-unit>
-      <trans-unit id="35">
+      <trans-unit id="32">
         <source>unknown</source>
         <target>unbekannt</target>
       </trans-unit>
-      <trans-unit id="36">
+      <trans-unit id="33">
         <source>error</source>
         <target>fehler</target>
       </trans-unit>
-      <trans-unit id="37">
+      <trans-unit id="34">
         <source>Wake up</source>
         <target>Aufwachen</target>
       </trans-unit>
-      <trans-unit id="38">
+      <trans-unit id="35">
         <source>Suspend</source>
         <target>Aussetzen</target>
       </trans-unit>

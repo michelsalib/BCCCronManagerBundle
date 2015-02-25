@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="span2">
                     <span class="label label-{% if cron.status == 'error' %}danger{% elseif cron.status == 'unknown' %}warning{%else%}success{% endif %}">
-                        {{ cron.status | trans({}, 'BCCCronManagerBundle') }}
+                        {{ cron.status | trans({}, 'BCCCronManagerBundle') | capitalize }}
                     </span>
                 </div>
                 <h3 class="span{% if cron.suspended %} text-muted{% endif %}">

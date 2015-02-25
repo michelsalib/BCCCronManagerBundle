@@ -119,38 +119,26 @@
         <target>Cron tablosu</target>
       </trans-unit>
       <trans-unit id="30">
-        <source>Success</source>
-        <target>Başarılı</target>
-      </trans-unit>
-      <trans-unit id="31">
-        <source>Unknown</source>
-        <target>Bilinmiyor</target>
-      </trans-unit>
-      <trans-unit id="32">
-        <source>Error</source>
-        <target>Hata</target>
-      </trans-unit>
-      <trans-unit id="33">
         <source>Command</source>
         <target>Komut</target>
       </trans-unit>
-      <trans-unit id="34">
+      <trans-unit id="31">
         <source>success</source>
         <target>başarılı</target>
       </trans-unit>
-      <trans-unit id="35">
+      <trans-unit id="32">
         <source>unknown</source>
         <target>bilinmiyor</target>
       </trans-unit>
-      <trans-unit id="36">
+      <trans-unit id="33">
         <source>error</source>
         <target>hata</target>
       </trans-unit>
-      <trans-unit id="37">
+      <trans-unit id="34">
         <source>Wake up</source>
         <target>Uyanmak</target>
       </trans-unit>
-      <trans-unit id="38">
+      <trans-unit id="35">
         <source>Suspend</source>
         <target>Askıya almak</target>
       </trans-unit>
