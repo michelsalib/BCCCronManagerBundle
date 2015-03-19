@@ -41,7 +41,11 @@ class CronManager
         foreach ($lines as $lineNumber => $line) {
             // if line is nt a comment, convert it to a cron
             if (\strpos($line, '#suspended: ', 0) === 0 || 0 !== \strpos($line, '#', 0)) {
-                $line = Cron::parse($line);
+                try {
+                    $line = Cron::parse($line);
+                } catch (\Exception $e) {
+                    $process->addErrorOutput('CronManager was unable to parse crontab at line '.$lineNumber);
+                }
             }
             $this->lines['l'.$lineNumber] = $line;
         }
