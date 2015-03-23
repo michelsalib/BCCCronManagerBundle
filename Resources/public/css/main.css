@@ -34,3 +34,7 @@ body {
 .glyphicon-white, .glyphicon-white a {
     color: #fff;
 }
+
+#existing-crons .table  pre {
+    white-space: pre-wrap;
+}
