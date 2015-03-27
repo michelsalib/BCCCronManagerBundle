@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>Comment</source>
+        <target>Комментарий</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Day Of Month</source>
+        <target>День месяца</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Day Of Week</source>
+        <target>День недели</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Error File</source>
+        <target>Файл ошибок</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Hour</source>
+        <target>Час</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Last Run</source>
+        <target>Последний запуск</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Log File</source>
+        <target>Файл лога</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Minute</source>
+        <target>Минута</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Month</source>
+        <target>Месяц</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Time Presets</source>
+        <target>Шаблоны</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Raw cron</source>
+        <target>Исходный вид</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Add</source>
+        <target>Добавить</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Edit</source>
+        <target>Изменить</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
+        <target>Помните, что планировщик работает под пользователем %user% и его корневой директорией является %root%</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Daily</source>
+        <target>Ежедневно</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Hourly</source>
+        <target>Ежечасно</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Monthly</source>
+        <target>Ежемесячно</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Symfony Command</source>
+        <target>Команда Symfony</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Symfony log directory</source>
+        <target>Директория логов</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Weekly</source>
+        <target>Еженедельно</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Yearly</source>
+        <target>Ежегодно</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Remove</source>
+        <target>Удалить</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Details</source>
+        <target>Подробности</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Close</source>
+        <target>Закрыть</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>BCC Cron Manager</source>
+        <target>BCC Cron Manager</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Add a cron</source>
+        <target>Новая задача</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Edit a cron</source>
+        <target>Редактировать</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Cron list</source>
+        <target>Список задач</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Cron table</source>
+        <target>Файл планировщика</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Command</source>
+        <target>Команда</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>success</source>
+        <target>успешно</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>unknown</source>
+        <target>нет данных</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>error</source>
+        <target>ошибка</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Wake up</source>
+        <target>Включить</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Suspend</source>
+        <target>Отключить</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
