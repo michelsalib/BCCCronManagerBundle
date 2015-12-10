@@ -4,32 +4,31 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
 
-    <route id="BCCCronManagerBundle_index" pattern="/">
+    <route id="BCCCronManagerBundle_index" path="/">
         <default key="_controller">BCCCronManagerBundle:Default:index</default>
     </route>
 
-    <route id="BCCCronManagerBundle_edit" pattern="/{id}/edit">
+    <route id="BCCCronManagerBundle_edit" path="/{id}/edit">
         <default key="_controller">BCCCronManagerBundle:Default:edit</default>
     </route>
 
-    <route id="BCCCronManagerBundle_add" pattern="/add">
+    <route id="BCCCronManagerBundle_add" path="/add" methods="POST">
         <default key="_controller">BCCCronManagerBundle:Default:add</default>
-        <requirement key="_method">POST</requirement>
     </route>
 
-    <route id="BCCCronManagerBundle_wakeup" pattern="/{id}/wakeup">
+    <route id="BCCCronManagerBundle_wakeup" path="/{id}/wakeup">
         <default key="_controller">BCCCronManagerBundle:Default:wakeup</default>
     </route>
 
-    <route id="BCCCronManagerBundle_suspend" pattern="/{id}/suspend">
+    <route id="BCCCronManagerBundle_suspend" path="/{id}/suspend">
         <default key="_controller">BCCCronManagerBundle:Default:suspend</default>
     </route>
 
-    <route id="BCCCronManagerBundle_remove" pattern="/{id}/remove">
+    <route id="BCCCronManagerBundle_remove" path="/{id}/remove">
         <default key="_controller">BCCCronManagerBundle:Default:remove</default>
     </route>
 
-    <route id="BCCCronManagerBundle_file" pattern="/{id}/file/{type}">
+    <route id="BCCCronManagerBundle_file" path="/{id}/file/{type}">
         <default key="_controller">BCCCronManagerBundle:Default:file</default>
         <requirement key="type">log|error</requirement>
     </route>
