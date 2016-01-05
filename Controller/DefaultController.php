@@ -25,7 +25,7 @@ class DefaultController extends Controller
         $this->addFlash('message', $cm->getOutput());
         $this->addFlash('error', $cm->getError());
 
-        $form = $this->createForm(new CronType(), new Cron());
+        $form = $this->createCronForm(new Cron());
 
         return $this->render('BCCCronManagerBundle:Default:index.html.twig', array(
             'crons' => $cm->get(),
@@ -47,7 +47,7 @@ class DefaultController extends Controller
         $cron = new Cron();
         $this->addFlash('message', $cm->getOutput());
         $this->addFlash('error', $cm->getError());
-        $form = $this->createForm(new CronType(), $cron);
+        $form = $this->createCronForm($cron);
 
         $form->handleRequest($request);
         if ($form->isValid()) {
@@ -79,7 +79,7 @@ class DefaultController extends Controller
         $crons = $cm->get();
         $this->addFlash('message', $cm->getOutput());
         $this->addFlash('error', $cm->getError());
-        $form = $this->createForm(new CronType(), $crons[$id]);
+        $form = $this->createCronForm($crons[$id]);
 
         $form->handleRequest($request);
         if ($form->isValid()) {
@@ -195,5 +195,16 @@ class DefaultController extends Controller
         $session = $this->get('session');
 
         $session->getFlashBag()->add($type, $message);
+    }
+
+    private function createCronForm($data)
+    {
+        if (method_exists('Symfony\Component\Form\AbstractType', 'getBlockPrefix')) {
+            $type = 'BCC\CronManagerBundle\Form\Type\CronType';
+        } else {
+            $type = new CronType();
+        }
+
+        return $this->createForm($type, $data);
     }
 }
