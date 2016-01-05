@@ -2,6 +2,7 @@
 
 namespace BCC\CronManagerBundle\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
 use \Symfony\Component\Serializer\Encoder\JsonEncoder;
 use \Symfony\Component\Serializer\Serializer;
 use \Symfony\Component\HttpFoundation\Response;
@@ -36,9 +37,11 @@ class DefaultController extends Controller
     /**
      * Add a cron to the cron table
      *
+     * @param Request $request
+     *
      * @return \Symfony\Bundle\FrameworkBundle\Controller\Response
      */
-    public function addAction()
+    public function addAction(Request $request)
     {
         $cm = new CronManager();
         $cron = new Cron();
@@ -46,7 +49,6 @@ class DefaultController extends Controller
         $this->addFlash('error', $cm->getError());
         $form = $this->createForm(new CronType(), $cron);
 
-        $request = $this->get('request');
         $form->handleRequest($request);
         if ($form->isValid()) {
             $cm->add($cron);
@@ -67,9 +69,11 @@ class DefaultController extends Controller
      * Edit a cron
      *
      * @param $id The line of the cron in the cron table
+     * @param Request $request
+     *
      * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse|\Symfony\Bundle\FrameworkBundle\Controller\Response
      */
-    public function editAction($id)
+    public function editAction($id, Request $request)
     {
         $cm = new CronManager();
         $crons = $cm->get();
@@ -77,7 +81,6 @@ class DefaultController extends Controller
         $this->addFlash('error', $cm->getError());
         $form = $this->createForm(new CronType(), $crons[$id]);
 
-        $request = $this->get('request');
         $form->handleRequest($request);
         if ($form->isValid()) {
             $cm->write();
@@ -137,9 +140,11 @@ class DefaultController extends Controller
      * Remove a cron from the cron table
      *
      * @param $id The line of the cron in the cron table
+     * @param Request $request
+     *
      * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
      */
-    public function removeAction($id)
+    public function removeAction($id, Request $request)
     {
         $cm = new CronManager();
         $this->addFlash('message', $cm->getOutput());
