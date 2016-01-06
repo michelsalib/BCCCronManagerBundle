@@ -47,15 +47,13 @@ class DefaultController extends Controller
         $form = $this->createForm(new CronType(), $cron);
 
         $request = $this->get('request');
-        if ('POST' == $request->getMethod()) {
-            $form->handleRequest($request);
-            if ($form->isValid()) {
-                $cm->add($cron);
-                $this->addFlash('message', $cm->getOutput());
-                $this->addFlash('error', $cm->getError());
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $cm->add($cron);
+            $this->addFlash('message', $cm->getOutput());
+            $this->addFlash('error', $cm->getError());
 
-                return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
-            }
+            return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
 
         return $this->render('BCCCronManagerBundle:Default:index.html.twig', array(
@@ -80,16 +78,14 @@ class DefaultController extends Controller
         $form = $this->createForm(new CronType(), $crons[$id]);
 
         $request = $this->get('request');
-        if ('POST' == $request->getMethod()) {
-            $form->handleRequest($request);
-            if ($form->isValid()) {
-                $cm->write();
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $cm->write();
 
-                $this->addFlash('message', $cm->getOutput());
-                $this->addFlash('error', $cm->getError());
+            $this->addFlash('message', $cm->getOutput());
+            $this->addFlash('error', $cm->getError());
 
-                return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
-            }
+            return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
 
         return $this->render('BCCCronManagerBundle:Default:edit.html.twig', array(

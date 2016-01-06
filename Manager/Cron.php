@@ -414,7 +414,7 @@ class Cron
     /**
      * Sets the value of isSuspended
      *
-     * @param boolean $suspended status
+     * @param boolean $isSuspended status
      *
      * @return Cron
      */
