@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>Comment</source>
+        <target>Komentaras</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Day Of Month</source>
+        <target>Mėnesio diena</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Day Of Week</source>
+        <target>Savaitės diena</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Error File</source>
+        <target>Klaidų failas</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Hour</source>
+        <target>Valanda</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Last Run</source>
+        <target>Paskutinį kartą paleistas</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Log File</source>
+        <target>Žurnalo (log) failas</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Minute</source>
+        <target>Minutė</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Month</source>
+        <target>Mėnuo</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Time Presets</source>
+        <target>Paleidimo laikai</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Raw cron</source>
+        <target>Cron</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Add</source>
+        <target>Pridėti</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Edit</source>
+        <target>Redaguoti</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
+        <target>Atkreipkite dėmesį, kad cron vartotojas yra %user% ir jo namų direktorija - %root%</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Daily</source>
+        <target>Kas dieną</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Hourly</source>
+        <target>Kas valandą</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Monthly</source>
+        <target>Kas mėnesį</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Symfony Command</source>
+        <target>Symfony komanda</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Symfony log directory</source>
+        <target>Symfony log direktorija</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Weekly</source>
+        <target>Kas savaitę</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Yearly</source>
+        <target>Kartą į metus</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Remove</source>
+        <target>Pašalinti</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Details</source>
+        <target>Išsamiau</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Close</source>
+        <target>Uždaryti</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>BCC Cron Manager</source>
+        <target>BCC Cron tvarkytuvė</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Add a cron</source>
+        <target>Pridėti naują cron</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Edit a cron</source>
+        <target>Redaguoti cron</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Cron list</source>
+        <target>Cron sąrašas</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Cron table</source>
+        <target>Cron lentelė</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Command</source>
+        <target>Komanda</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>success</source>
+        <target>sėkmė</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>unknown</source>
+        <target>nežinomas</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>error</source>
+        <target>klaida</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Wake up</source>
+        <target>Paleisti</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Suspend</source>
+        <target>Pristabdyti</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
