@@ -4,12 +4,19 @@ namespace BCC\CronManagerBundle\Form\Type;
 
 use \Symfony\Component\Form\FormBuilderInterface;
 use \Symfony\Component\Form\AbstractType;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 class CronType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        if (method_exists('Symfony\Component\Form\AbstractType', 'getBlockPrefix')) {
+            $textType = 'Symfony\Component\Form\Extension\Core\Type\TextType';
+        } else {
+            $textType = 'text';
+        }
+
         $builder
             ->add('minute')
             ->add('hour')
@@ -17,18 +24,23 @@ class CronType extends AbstractType
             ->add('month')
             ->add('dayOfWeek')
             ->add('command')
-            ->add('logFile', 'text', array(
+            ->add('logFile', $textType, array(
                 'required' => false,
             ))
-            ->add('errorFile', 'text', array(
+            ->add('errorFile', $textType, array(
                 'required' => false,
             ))
-            ->add('comment', 'text', array(
+            ->add('comment', $textType, array(
                 'required' => false,
             ));
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+        $this->configureOptions($resolver);
+    }
+
+    public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
             'data_class' => 'BCC\CronManagerBundle\Manager\Cron'
