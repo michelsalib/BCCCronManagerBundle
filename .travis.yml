@@ -23,11 +23,14 @@ matrix:
       env: SYMFONY_VERSION=2.8.x
     - php: 5.6
       env: SYMFONY_VERSION=3.0.x
+    - php: 5.6
+      env: TWIG_VERSION=2.0.x-dev
   fast_finish: true
 
 before_install:
   - if [[ $TRAVIS_PHP_VERSION != hhvm ]]; then phpenv config-rm xdebug.ini; fi
   - if [[ "$SYMFONY_VERSION" != "" ]]; then composer require --dev symfony/symfony:$SYMFONY_VERSION; fi
+  - if [[ "$TRAVIS_VERSION" != "" ]]; then composer require --dev twig/twig:$TWIG_VERSION; fi
 
 install:
   - composer install --prefer-dist
