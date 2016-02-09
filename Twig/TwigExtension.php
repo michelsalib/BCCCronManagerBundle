@@ -2,7 +2,7 @@
 
 namespace BCC\CronManagerBundle\Twig;
 
-class TwigExtension extends \Twig_Extension implements Twig_Extension_GlobalsInterface
+class TwigExtension extends \Twig_Extension implements \Twig_Extension_GlobalsInterface
 {
     /**
      * @var array
