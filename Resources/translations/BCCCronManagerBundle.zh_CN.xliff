@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>Comment</source>
+        <target>说明文件</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Day Of Month</source>
+        <target>本月的某一天</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Day Of Week</source>
+        <target>本周的某一天</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Error File</source>
+        <target>错误文件地址</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Hour</source>
+        <target>时</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Last Run</source>
+        <target>最后执行</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Log File</source>
+        <target>日志文件地址</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Minute</source>
+        <target>分</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Month</source>
+        <target>月</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Time Presets</source>
+        <target>预设时间</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Raw cron</source>
+        <target>原例程</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Add</source>
+        <target>添加</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Edit</source>
+        <target>编辑</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
+        <target>该例程对应的用户是 %user% ,并且它的根目录是 %root%.</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Daily</source>
+        <target>每天</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Hourly</source>
+        <target>每时</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Monthly</source>
+        <target>每月</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Symfony command</source>
+        <target>Symfony命令</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Symfony log directory</source>
+        <target>日志目录</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Weekly</source>
+        <target>每周</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Yearly</source>
+        <target>每年</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Remove</source>
+        <target>移除</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Details</source>
+        <target>详情</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Close</source>
+        <target>关闭</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>BCC Cron Manager</source>
+        <target>BCC例程管理</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Add a cron</source>
+        <target>添加例程</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Edit a cron</source>
+        <target>编辑例程</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Cron list</source>
+        <target>例程列表</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>例程表</source>
+        <target>Tabla de crons</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Command</source>
+        <target>命令</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>success</source>
+        <target>成功</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>unknown</source>
+        <target>未知</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>error</source>
+        <target>错误</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Wake up</source>
+        <target>活跃</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Suspend</source>
+        <target>暂缓</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
