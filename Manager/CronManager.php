@@ -40,7 +40,7 @@ class CronManager
 
         foreach ($lines as $lineNumber => $line) {
             // if line is nt a comment, convert it to a cron
-            if (\strpos($line, '#suspended: ', 0) === 0 || 0 !== \strpos($line, '#', 0)) {
+            if ((\strpos($line, '#suspended: ', 0) === 0 || 0 !== \strpos($line, '#', 0)) && !preg_match('/^\s*[a-z0-9_]+\s*=/i', $line)) {
                 try {
                     $line = Cron::parse($line);
                 } catch (\Exception $e) {
