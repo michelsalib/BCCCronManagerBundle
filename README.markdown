@@ -131,6 +131,6 @@ Add the Assetic configuration file to the `imports` section of your `config.yml`
 
 ``` yml
 imports:
-    - { resource: @BCCCronManagerBundle/Resources/config/assetic.yml }
+    - { resource: "@BCCCronManagerBundle/Resources/config/assetic.yml" }
 ```
 
