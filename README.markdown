@@ -61,3 +61,10 @@ BCCCronManagerBundle:
     prefix:   admin/cron-manager
 ```
 You can customize the prefix as you wish.
+
+Don't forget to secure your route :
+
+``` yml
+    access_control:
+        - { path: ^/admin, role: ROLE_ADMIN }
+```
