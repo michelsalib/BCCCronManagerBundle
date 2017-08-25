@@ -25,76 +25,13 @@ It is a bundle that provides a web interface for managing cron table.
 
 ### Get the bundle
 
-#### If you are using Symfony 2.1 and more
+If you are using Symfony 2.1 see previous tags according to your Symfony version
 
-Add BCCCronManagerBundle to your composer.json:
+Add BCCCronManagerBundle:
 
-In 2.1/2.2 :
-
-``` js
-    "bcc/cron-manager-bundle": "2.2.*@dev"
-```
-
-In 2.3 :
-
-``` js
-    "bcc/cron-manager-bundle": "v2.3.0"
-```
-
-In 2.4 (Twitter Bootrap 2.*) :
-
-``` js
-    "bcc/cron-manager-bundle": "v2.4.0"
-```
-
-In 2.4 (Twitter Bootrap 3.*) :
-
-``` js
-    "bcc/cron-manager-bundle": "v2.4.1"
-```
-
-In 2.6 and more :
-
-``` js
-    "bcc/cron-manager-bundle": "v2.6.*"
-```
-
-For Bootstrap 3 and symfony less than 2.6, do not forget to add your own Less filter like this in your config.yml :
-```
-    filters:
-        less:
-            node:       %node%
-            node_paths: [%node_paths%]
-            apply_to: "\.less$"
-```
-
-Now tell composer to download the bundle by running the command:
 ``` bash
-php composer.phar update bcc/cron-manager-bundle
-```
-
-#### If you are using Symfony 2.0.x
-Add to your `/deps` file :
-
-```
-[BCCCronManagerBundle]
-    git=http://github.com/michelsalib/BCCCronManagerBundle.git
-    target=/bundles/BCC/CronManagerBundle
-    version=origin/2.0
-```
-
-And make a `php bin/vendors install`.
-
-##### Register the namespace (only for Symfony 2.0.x)
-
-``` php
-<?php
-
-    // app/autoload.php
-    $loader->registerNamespaces(array(
-        'BCC' => __DIR__.'/../vendor/bundles',
-        // your other namespaces
-    ));
+    composer require bcc/cron-manager-bundle v3.1
+    bin/console assets:install
 ```
 
 ### Add BCCCronManagerBundle to your application kernel
@@ -121,16 +58,6 @@ Add to your `routing.yml`:
 #BCCCronManager routing
 BCCCronManagerBundle:
     resource: "@BCCCronManagerBundle/Resources/config/routing.xml"
-    prefix:   /cron-manager
+    prefix:   admin/cron-manager
 ```
 You can customize the prefix as you wish.
-
-### Import the Assetic configuration
-
-Add the Assetic configuration file to the `imports` section of your `config.yml`:
-
-``` yml
-imports:
-    - { resource: "@BCCCronManagerBundle/Resources/config/assetic.yml" }
-```
-

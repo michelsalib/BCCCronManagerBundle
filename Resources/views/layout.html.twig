@@ -13,13 +13,8 @@
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 
-    <!-- Le styles -->
-    {% stylesheets
-        '@BCCCronManagerBundle/Resources/public/css/main.css'
-        combine=true
-    %}
-    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
-    {% endstylesheets %}
+    <link href="{{ asset('bundles/bcccronmanager/css/main.css') }}" type="text/css" rel="stylesheet" />
+
 
 </head>
 
@@ -64,12 +59,8 @@
 </div>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-{% javascripts
-    '@BCCCronManagerBundle/Resources/public/js/script.js'
-    combine=true
-%}
-     <script src="{{ asset_url }}"></script>
-{% endjavascripts %}
+
+<script src="{{ asset('bundles/bcccronmanager/js/script.js') }}"></script>
 
 </body>
 </html>
