@@ -34,7 +34,7 @@ matrix:
 
 before_install:
   - if [ "$DEPENDENCIES" = "beta" ]; then composer config minimum-stability beta; fi;
-  - if [[ $TRAVIS_PHP_VERSION = "5.3" ]]; then echo "memory_limit=1G" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi 
+  - if [[ $TRAVIS_PHP_VERSION = "5.3" ]]; then echo "memory_limit=2G" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi 
   - if [[ $TRAVIS_PHP_VERSION != hhvm ]]; then phpenv config-rm xdebug.ini; fi
   - if [[ "$SYMFONY_VERSION" != "" ]]; then composer require --dev symfony/symfony:$SYMFONY_VERSION; fi
   - if [[ "$TRAVIS_VERSION" != "" ]]; then composer require --dev twig/twig:$TWIG_VERSION; fi
