@@ -17,6 +17,7 @@ matrix:
   include:
     - php: 5.3
       dist: precise
+      sudo: required
     - php: 5.6
       env: SYMFONY_VERSION=2.3.x
     - php: 5.6
