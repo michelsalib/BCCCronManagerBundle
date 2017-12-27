@@ -178,25 +178,6 @@ class DefaultController extends Controller
         return new Response($serializer->serialize($data, 'json'));
     }
 
-    /**
-     * Adds a flash to the flash bag where flashes are array of messages
-     *
-     * @param $type
-     * @param $message
-     * @return mixed
-     */
-    protected function addFlash($type, $message)
-    {
-        if ('' == $message || null === $message) {
-            return;
-        }
-
-        /* @var $session \Symfony\Component\HttpFoundation\Session */
-        $session = $this->get('session');
-
-        $session->getFlashBag()->add($type, $message);
-    }
-
     private function createCronForm($data)
     {
         if (method_exists('Symfony\Component\Form\AbstractType', 'getBlockPrefix')) {
