@@ -30,7 +30,7 @@ If you are using Symfony 2.1 see previous tags according to your Symfony version
 Add BCCCronManagerBundle:
 
 ``` bash
-    composer require bcc/cron-manager-bundle v3.1
+    composer require bcc/cron-manager-bundle v4.0
     bin/console assets:install
 ```
 
