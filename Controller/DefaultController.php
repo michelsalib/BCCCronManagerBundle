@@ -2,6 +2,7 @@
 
 namespace BCC\CronManagerBundle\Controller;
 
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use \Symfony\Component\Serializer\Encoder\JsonEncoder;
 use \Symfony\Component\Serializer\Serializer;
@@ -17,17 +18,17 @@ class DefaultController extends Controller
     /**
      * Displays the current crons and a form to add a new one.
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\Response
+     * @return Response
      */
     public function indexAction()
     {
         $cm = new CronManager();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
 
         $form = $this->createCronForm(new Cron());
 
-        return $this->render('BCCCronManagerBundle:Default:index.html.twig', array(
+        return $this->render('@BCCCronManager/Default/index.html.twig', array(
             'crons' => $cm->get(),
             'raw'   => $cm->getRaw(),
             'form'  => $form->createView(),
@@ -39,18 +40,18 @@ class DefaultController extends Controller
      *
      * @param Request $request
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\Response
+     * @return Response
      */
     public function addAction(Request $request)
     {
         $cm = new CronManager();
         $cron = new Cron();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
         $form = $this->createCronForm($cron);
 
         $form->handleRequest($request);
-        if ($form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $cm->add($cron);
             $this->addFlash('message', $cm->getOutput());
             $this->addFlash('error', $cm->getError());
@@ -58,7 +59,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
 
-        return $this->render('BCCCronManagerBundle:Default:index.html.twig', array(
+        return $this->render('@BCCCronManager/Default/index.html.twig', array(
             'crons' => $cm->get(),
             'raw'   => $cm->getRaw(),
             'form'  => $form->createView(),
@@ -68,21 +69,22 @@ class DefaultController extends Controller
     /**
      * Edit a cron
      *
-     * @param $id The line of the cron in the cron table
+     * $id The line of the cron in the cron table
+     * @param $id       
      * @param Request $request
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse|\Symfony\Bundle\FrameworkBundle\Controller\Response
+     * @return RedirectResponse|Response
      */
     public function editAction($id, Request $request)
     {
         $cm = new CronManager();
         $crons = $cm->get();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
         $form = $this->createCronForm($crons[$id]);
 
         $form->handleRequest($request);
-        if ($form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $cm->write();
 
             $this->addFlash('message', $cm->getOutput());
@@ -91,7 +93,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
 
-        return $this->render('BCCCronManagerBundle:Default:edit.html.twig', array(
+        return $this->render('@BCCCronManager/Default/edit.html.twig', array(
             'form'  => $form->createView(),
         ));
     }
@@ -99,19 +101,19 @@ class DefaultController extends Controller
     /**
      * Wake up a cron from the cron table
      *
-     * @param $id The line of the cron in the cron table
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
+     * @param $id
+     * @return RedirectResponse
      */
     public function wakeupAction($id)
     {
         $cm = new CronManager();
         $crons = $cm->get();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
         $crons[$id]->setSuspended(false);
         $cm->write();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
 
         return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
     }
@@ -119,19 +121,19 @@ class DefaultController extends Controller
     /**
      * Suspend a cron from the cron table
      *
-     * @param $id The line of the cron in the cron table
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
+     * @param $id
+     * @return RedirectResponse
      */
     public function suspendAction($id)
     {
         $cm = new CronManager();
         $crons = $cm->get();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
         $crons[$id]->setSuspended(true);
         $cm->write();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
 
         return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
     }
@@ -139,19 +141,19 @@ class DefaultController extends Controller
     /**
      * Remove a cron from the cron table
      *
-     * @param $id The line of the cron in the cron table
+     * @param $id
      * @param Request $request
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
+     * @return RedirectResponse
      */
     public function removeAction($id, Request $request)
     {
         $cm = new CronManager();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
         $cm->remove($id);
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        if ( $cm->getOutput() != "" ) { $this->addFlash('message', $cm->getOutput()); }
+        if ( $cm->getError() != "" ) { $this->addFlash('error', $cm->getError()); }
 
         return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
     }
@@ -159,9 +161,9 @@ class DefaultController extends Controller
     /**
      * Gets a log file
      *
-     * @param $id The line of the cron in the cron table
-     * @param $type The type of file, log or error
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @param $id
+     * @param $type
+     * @return Response
      */
     public function fileAction($id, $type)
     {

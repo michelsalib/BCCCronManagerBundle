@@ -8,7 +8,7 @@
         <service id="bcc_cron_manager.twig.extension" class="BCC\CronManagerBundle\Twig\TwigExtension" public="false">
             <tag name="twig.extension"/>
             <argument>%kernel.logs_dir%</argument>
-            <argument>%kernel.root_dir%</argument>
+            <argument>%kernel.project_dir%</argument>
         </service>
     </services>
 

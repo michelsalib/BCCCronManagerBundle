@@ -4,3 +4,4 @@ autoload.php
 composer.phar
 composer.lock
 /nbproject/*
+.idea

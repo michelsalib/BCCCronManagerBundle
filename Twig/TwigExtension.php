@@ -31,7 +31,7 @@ class TwigExtension extends \Twig_Extension implements \Twig_Extension_GlobalsIn
             );
         }
         $this->logDir = $logDir;
-        $this->symfonyCommand = 'php '.$kernelDir.'/console';
+        $this->symfonyCommand = 'php '.$kernelDir.'/bin/console';
     }
     
     public function getGlobals()
