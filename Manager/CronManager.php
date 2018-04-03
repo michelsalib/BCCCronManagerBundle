@@ -80,7 +80,7 @@ class CronManager
     /**
      * Remove a cron from the cron table
      *
-     * @param $index The line number
+     * @param $index
      */
     public function remove($index)
     {
