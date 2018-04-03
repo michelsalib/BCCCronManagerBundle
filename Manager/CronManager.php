@@ -27,7 +27,7 @@ class CronManager
      *
      * @var string
      */
-    protected $output = 0;
+    protected $output = "";
 
     function __construct()
     {
