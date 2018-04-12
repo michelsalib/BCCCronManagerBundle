@@ -22,8 +22,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $cm = new CronManager();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
 
         $form = $this->createCronForm(new Cron());
 
@@ -45,15 +44,13 @@ class DefaultController extends Controller
     {
         $cm = new CronManager();
         $cron = new Cron();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
         $form = $this->createCronForm($cron);
 
         $form->handleRequest($request);
-        if ($form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $cm->add($cron);
-            $this->addFlash('message', $cm->getOutput());
-            $this->addFlash('error', $cm->getError());
+            $this->addFlashFromCronManager($cm);
 
             return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
@@ -77,16 +74,14 @@ class DefaultController extends Controller
     {
         $cm = new CronManager();
         $crons = $cm->get();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
         $form = $this->createCronForm($crons[$id]);
 
         $form->handleRequest($request);
-        if ($form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $cm->write();
 
-            $this->addFlash('message', $cm->getOutput());
-            $this->addFlash('error', $cm->getError());
+            $this->addFlashFromCronManager($cm);
 
             return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
@@ -106,12 +101,10 @@ class DefaultController extends Controller
     {
         $cm = new CronManager();
         $crons = $cm->get();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
         $crons[$id]->setSuspended(false);
         $cm->write();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
 
         return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
     }
@@ -126,12 +119,10 @@ class DefaultController extends Controller
     {
         $cm = new CronManager();
         $crons = $cm->get();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
         $crons[$id]->setSuspended(true);
         $cm->write();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
 
         return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
     }
@@ -147,11 +138,9 @@ class DefaultController extends Controller
     public function removeAction($id, Request $request)
     {
         $cm = new CronManager();
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
         $cm->remove($id);
-        $this->addFlash('message', $cm->getOutput());
-        $this->addFlash('error', $cm->getError());
+        $this->addFlashFromCronManager($cm);
 
         return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
     }
@@ -187,5 +176,21 @@ class DefaultController extends Controller
         }
 
         return $this->createForm($type, $data);
+    }
+
+    /**
+     * Set flash from CronManager
+     *
+     * @param CronManager $cm
+     */
+    protected function addFlashFromCronManager(CronManager $cm)
+    {
+        if ($cm->getOutput()) {
+            $this->addFlash('message', $cm->getOutput());
+        }
+
+        if ($cm->getError()) {
+            $this->addFlash('error', $cm->getError());
+        }
     }
 }

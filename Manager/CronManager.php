@@ -29,7 +29,7 @@ class CronManager
      */
     protected $output;
 
-    function __construct()
+    public function __construct()
     {
         // parsing cron file
         $process = new Process('crontab -l');
