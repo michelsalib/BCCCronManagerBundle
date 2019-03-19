@@ -1,7 +1,7 @@
 {
     "name": "bcc/cron-manager-bundle",
     "type": "symfony-bundle",
-    "description": "A cron table manager bundle for Symfony2",
+    "description": "A cron table manager bundle for Symfony",
     "keywords": ["cron management"],
     "homepage": "http://github.com/michelsalib/BCCCronManagerBundle",
     "license": "MIT",

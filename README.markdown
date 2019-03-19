@@ -25,41 +25,17 @@ It is a bundle that provides a web interface for managing cron table.
 
 ### Get the bundle
 
-If you are using Symfony 2.1 see previous tags according to your Symfony version
+Use Tag 4.2 for Symfony4, see previous tags and README according to your older version
 
 Add BCCCronManagerBundle:
 
 ``` bash
-    composer require bcc/cron-manager-bundle v4.0
+    composer require bcc/cron-manager-bundle v4.2
     bin/console assets:install
 ```
 
-### Add BCCCronManagerBundle to your application kernel
+Adding BCCCronManagerBundle to your application kernel and import the routing configuration is already done by SymfonyFlex
 
-``` php
-<?php
-
-    // app/AppKernel.php
-    public function registerBundles()
-    {
-        return array(
-            // ...
-            new BCC\CronManagerBundle\BCCCronManagerBundle(),
-            // ...
-        );
-    }
-```
-
-### Import the routing configuration
-
-Add to your `routing.yml`:
-
-``` yml
-#BCCCronManager routing
-BCCCronManagerBundle:
-    resource: "@BCCCronManagerBundle/Resources/config/routing.xml"
-    prefix:   admin/cron-manager
-```
 You can customize the prefix as you wish.
 
 Don't forget to secure your route :
