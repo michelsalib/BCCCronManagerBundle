@@ -2,6 +2,7 @@
 
 namespace BCC\CronManagerBundle\Controller;
 
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use \Symfony\Component\Serializer\Encoder\JsonEncoder;
 use \Symfony\Component\Serializer\Serializer;
@@ -17,7 +18,7 @@ class DefaultController extends Controller
     /**
      * Displays the current crons and a form to add a new one.
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\Response
+     * @return Response
      */
     public function indexAction()
     {
@@ -26,7 +27,7 @@ class DefaultController extends Controller
 
         $form = $this->createCronForm(new Cron());
 
-        return $this->render('BCCCronManagerBundle:Default:index.html.twig', array(
+        return $this->render('@BCCCronManager/Default/index.html.twig', array(
             'crons' => $cm->get(),
             'raw'   => $cm->getRaw(),
             'form'  => $form->createView(),
@@ -38,7 +39,7 @@ class DefaultController extends Controller
      *
      * @param Request $request
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\Response
+     * @return Response
      */
     public function addAction(Request $request)
     {
@@ -55,7 +56,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
 
-        return $this->render('BCCCronManagerBundle:Default:index.html.twig', array(
+        return $this->render('@BCCCronManager:Default:index.html.twig', array(
             'crons' => $cm->get(),
             'raw'   => $cm->getRaw(),
             'form'  => $form->createView(),
@@ -65,10 +66,10 @@ class DefaultController extends Controller
     /**
      * Edit a cron
      *
-     * @param $id The line of the cron in the cron table
+     * @param $id int The line of the cron in the cron table
      * @param Request $request
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse|\Symfony\Bundle\FrameworkBundle\Controller\Response
+     * @return RedirectResponse|Response
      */
     public function editAction($id, Request $request)
     {
@@ -86,7 +87,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
 
-        return $this->render('BCCCronManagerBundle:Default:edit.html.twig', array(
+        return $this->render('@BCCCronManager:Default:edit.html.twig', array(
             'form'  => $form->createView(),
         ));
     }
@@ -94,8 +95,8 @@ class DefaultController extends Controller
     /**
      * Wake up a cron from the cron table
      *
-     * @param $id The line of the cron in the cron table
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
+     * @param $id int The line of the cron in the cron table
+     * @return RedirectResponse
      */
     public function wakeupAction($id)
     {
@@ -112,8 +113,8 @@ class DefaultController extends Controller
     /**
      * Suspend a cron from the cron table
      *
-     * @param $id The line of the cron in the cron table
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
+     * @param $id int The line of the cron in the cron table
+     * @return RedirectResponse
      */
     public function suspendAction($id)
     {
@@ -130,10 +131,10 @@ class DefaultController extends Controller
     /**
      * Remove a cron from the cron table
      *
-     * @param $id The line of the cron in the cron table
+     * @param $id int The line of the cron in the cron table
      * @param Request $request
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Controller\RedirectResponse
+     * @return RedirectResponse
      */
     public function removeAction($id, Request $request)
     {
@@ -148,8 +149,8 @@ class DefaultController extends Controller
     /**
      * Gets a log file
      *
-     * @param $id The line of the cron in the cron table
-     * @param $type The type of file, log or error
+     * @param $id int The line of the cron in the cron table
+     * @param $type sting The type of file, log or error
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function fileAction($id, $type)
