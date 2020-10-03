@@ -56,7 +56,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
 
-        return $this->render('@BCCCronManager:Default:index.html.twig', array(
+        return $this->render('@BCCCronManager/Default/index.html.twig', array(
             'crons' => $cm->get(),
             'raw'   => $cm->getRaw(),
             'form'  => $form->createView(),
@@ -87,7 +87,7 @@ class DefaultController extends Controller
             return $this->redirect($this->generateUrl('BCCCronManagerBundle_index'));
         }
 
-        return $this->render('@BCCCronManager:Default:edit.html.twig', array(
+        return $this->render('@BCCCronManager/Default/edit.html.twig', array(
             'form'  => $form->createView(),
         ));
     }
