@@ -7,16 +7,12 @@ cache:
     - $HOME/.composer/cache/files
 
 php:
-  - 7.1
-  - 7.2
+  - 7.4
 
 
 matrix:
-  include:
-    - php: 7.1
-      env: SYMFONY_VERSION=4.0.x
-    - php: 7.2
-      env: SYMFONY_VERSION=4.2.x
+    - php: 7.4
+      env: SYMFONY_VERSION=5.1.x
   fast_finish: true
 
 before_install:

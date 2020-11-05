@@ -25,7 +25,7 @@ It is a bundle that provides a web interface for managing cron table.
 
 ### Get the bundle
 
-Use Tag 4.2 for Symfony4, see previous tags and README according to your older version
+Use Tag 5 for Symfony 5, see previous tags and README according to your older version
 
 Add BCCCronManagerBundle:
 
