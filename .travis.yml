@@ -9,8 +9,8 @@ cache:
 php:
   - 7.4
 
-
 matrix:
+  include:
     - php: 7.4
       env: SYMFONY_VERSION=5.1.x
   fast_finish: true
