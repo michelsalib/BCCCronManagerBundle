@@ -30,7 +30,7 @@ Use Tag 5 for Symfony 5, see previous tags and README according to your older ve
 Add BCCCronManagerBundle:
 
 ``` bash
-    composer require bcc/cron-manager-bundle v4.2
+    composer require bcc/cron-manager-bundle v5.0
     bin/console assets:install
 ```
 
