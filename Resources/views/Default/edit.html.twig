@@ -6,7 +6,7 @@
             <h1>{{ 'Edit a cron' | trans({}, 'BCCCronManagerBundle') }}</h1>
         </div>
         <form role="form" method="post" action="#">
-            {% include 'BCCCronManagerBundle:Default:form.html.twig' with {'form': form} %}
+            {% include 'BCCCronManagerBundle/Default/form.html.twig' with {'form': form} %}
             <input type="submit" class="btn btn-success btn-lg" value="{{ 'Edit' | trans({}, 'BCCCronManagerBundle') }}"/>
         </form>
     </section>
