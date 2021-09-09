@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>Comment</source>
+        <target>Comment</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Day Of Month</source>
+        <target>Day Of Month</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Day Of Week</source>
+        <target>Day Of Week</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Error File</source>
+        <target>Error File</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Hour</source>
+        <target>Hour</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Last Run</source>
+        <target>Last Run</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Log File</source>
+        <target>Log File</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Minute</source>
+        <target>Minute</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Month</source>
+        <target>Month</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Time Presets</source>
+        <target>Time Presets</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Raw cron</source>
+        <target>Raw cron</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Add</source>
+        <target>Add</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
+        <target>Keep in mind that cron user is %user% and its root directory is %root%.</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Daily</source>
+        <target>Daily</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Hourly</source>
+        <target>Hourly</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Monthly</source>
+        <target>Monthly</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Symfony command</source>
+        <target>Symfony command</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Symfony log directory</source>
+        <target>Symfony log directory</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Weekly</source>
+        <target>Weekly</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Yearly</source>
+        <target>Yearly</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Remove</source>
+        <target>Remove</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Details</source>
+        <target>Details</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Close</source>
+        <target>Close</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>BCC Cron Manager</source>
+        <target>BCC Cron Manager</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Add a cron</source>
+        <target>Add a cron</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Edit a cron</source>
+        <target>Edit a cron</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Cron list</source>
+        <target>Cron list</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Cron table</source>
+        <target>Cron table</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Command</source>
+        <target>Command</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>success</source>
+        <target>success</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>unknown</source>
+        <target>unknown</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>error</source>
+        <target>error</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Wake up</source>
+        <target>Wake up</target>
+      </trans-unit>
+      <trans-unit erreurid="35">
+        <source>Suspend</source>
+        <target>Suspend</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
