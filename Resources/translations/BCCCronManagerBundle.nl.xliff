@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="1">
+        <source>Comment</source>
+        <target>Commentaar</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Day Of Month</source>
+        <target>Dag van de maand</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Day Of Week</source>
+        <target>Dag van de week</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Error File</source>
+        <target>Error bestand</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Hour</source>
+        <target>Uur</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Last Run</source>
+        <target>Laatste run</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Log File</source>
+        <target>Logboekbestand</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Minute</source>
+        <target>Minuut</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Month</source>
+        <target>Maande</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Time Presets</source>
+        <target>Tijdpresests</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Raw cron</source>
+        <target>Ruwe cron</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Add</source>
+        <target>Toevoegen</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Edit</source>
+        <target>Wijzigen</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Keep in mind that cron user is %user% and its root directory is %root%.</source>
+        <target>Houd in gedachten dat cron gebruiker %user% is en zijn root directory %root%.</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Daily</source>
+        <target>Dagelijks</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Hourly</source>
+        <target>Uurlijks</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Monthly</source>
+        <target>Maandelijks</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Symfony command</source>
+        <target>Symfony commando</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Symfony log directory</source>
+        <target>Symfonie logboek directory</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Weekly</source>
+        <target>Wekelijks</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Yearly</source>
+        <target>Jaarlijks</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Remove</source>
+        <target>Verwijderen</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Details</source>
+        <target>Details</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Close</source>
+        <target>Sluiten</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>BCC Cron Manager</source>
+        <target>BCC Cron Manager</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Add a cron</source>
+        <target>Voeg een cron toe</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Edit a cron</source>
+        <target>Wijzig een cron</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Cron list</source>
+        <target>Lijst met crons</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Cron table</source>
+        <target>Cron tafel</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Command</source>
+        <target>Commando</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>success</source>
+        <target>succes</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>unknown</source>
+        <target>onbekend</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>error</source>
+        <target>error</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Wake up</source>
+        <target>Wakker worden</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Suspend</source>
+        <target>Uitstellen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
