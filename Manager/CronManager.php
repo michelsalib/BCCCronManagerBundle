@@ -94,10 +94,6 @@ class CronManager
      */
     public function write()
     {
-        $file = \tempnam(\sys_get_temp_dir(), 'cron');
-
-        \file_put_contents($file, $this->getRaw().PHP_EOL);
-
         $process = new Process('crontab '.$file);
         $process->run();
 
